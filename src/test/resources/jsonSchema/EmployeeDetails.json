@@ -1,0 +1,808 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "employeeId",
+    "personalDetails",
+    "contactDetails",
+    "jobDetails",
+    "employmentStatus",
+    "compensation"
+    "rehireEligibility",
+    "documents"
+  ],
+  "properties": {
+    "employeeId": {
+      "title": "Employeeid",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "personalDetails": {
+      "title": "Personaldetails",
+      "type": "object",
+      "required": [
+        "firstName",
+        "additionalGivenName",
+        "lastName",
+        "preferredName",
+        "suffix",
+        "title",
+        "taxId",
+        "gender",
+        "birthday",
+        "maritalStatus",
+        "homeAddress",
+        "isDualCitizen",
+        "citizenship",
+        "photoUrl",
+        "wseClassification"
+      ],
+      "properties": {
+        "firstName": {
+          "title": "Firstname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "additionalGivenName": {
+          "title": "Additionalgivenname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "lastName": {
+          "title": "Lastname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "preferredName": {
+          "title": "Preferredname",
+          "type": "null",
+          "default": null
+        },
+        "suffix": {
+          "title": "Suffix",
+          "type": "null",
+          "default": null
+        },
+        "title": {
+          "title": "Title",
+          "type": "null",
+          "default": null
+        },
+        "taxId": {
+          "title": "Taxid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "gender": {
+          "title": "Gender",
+          "type": ["integer","null"],
+          "default": null
+        },
+        "birthday": {
+          "title": "Birthday",
+          "type": ["string","null"],
+          "default": null
+        },
+        "maritalStatus": {
+          "title": "Maritalstatus",
+          "type": ["integer","null"],
+          "default": null
+        },
+        "homeAddress": {
+          "type": "object",
+          "required": [
+            "street1",
+            "street2",
+            "city",
+            "state",
+            "postalCode",
+            "country",
+            "countryCode",
+            "countryID"
+          ],
+          "properties": {
+            "street1": {
+              "title": "Street1",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "street2": {
+              "title": "Street2",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "city": {
+              "title": "City",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "state": {
+              "title": "State",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "postalCode": {
+              "title": "Postalcode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "country": {
+              "title": "Country",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "countryCode": {
+              "title": "Countrycode",
+              "type": ["string","null"],
+              "default": null
+            },
+            "countryID": {
+              "title": "Countryid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "isDualCitizen": {
+          "title": "Isdualcitizen",
+          "type": ["boolean","null"],
+          "default": null
+        },
+        "citizenship": {
+          "title": "Citizenship",
+          "type": "array",
+          "default": []
+        },
+        "photoUrl": {
+          "title": "Photourl",
+          "type": ["string","null"],
+          "default": null
+        },
+        "wseClassification": {
+          "title": "Wseclassification",
+          "type": "integer",
+          "default": 0
+        }
+      }
+    }
+  ,
+    "contactDetails": {
+      "title": "Contactdetails",
+      "type": "object",
+      "required": [
+        "officeLandline",
+        "homeLandline",
+        "homeMobile",
+        "officeEmail",
+        "homeEmail"
+      ],
+      "properties": {
+        "officeLandline": {
+          "title": "Officelandline",
+          "type": "object",
+          "required": [
+            "countryCode",
+            "number",
+            "extension"
+          ],
+          "properties": {
+            "countryCode": {
+              "title": "Countrycode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "number": {
+              "title": "Number",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "extension": {
+              "title": "Extension",
+              "type": ["string","null"],
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "homeLandline": {
+          "title": "Homelandline",
+          "type": "object",
+          "required": [
+            "countryCode",
+            "number",
+            "extension"
+          ],
+          "properties": {
+            "countryCode": {
+              "title": "Countrycode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "number": {
+              "title": "Number",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "extension": {
+              "title": "Extension",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "homeMobile": {
+          "title": "Homemobile",
+          "type": "object",
+          "required": [
+            "countryCode",
+            "number"
+          ],
+          "properties": {
+            "countryCode": {
+              "title": "Countrycode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "number": {
+              "title": "Number",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "officeEmail": {
+          "title": "Officeemail",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "homeEmail": {
+          "title": "Homeemail",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    }
+  ,
+    "jobDetails": {
+      "title": "Jobdetails",
+      "type": "object",
+      "required": [
+        "division",
+        "workAddress",
+        "termEndDate",
+        "isProbationApplicable",
+        "employmentDetails",
+        "employmentStatusDetails",
+        "department",
+        "compensationDetails",
+        "isNonCompeteRequired",
+        "isCollectiveAgreementRequired",
+        "clientId",
+        "customerDetails",
+        "seniorityDate",
+        "employerNoticePeriod",
+        "employeeNoticePeriod",
+        "employerNoticePeriodType",
+        "employeeNoticePeriodType",
+        "targetStartDate",
+        "probationPeriodType",
+        "probationPeriod",
+        "probationEndDate",
+        "retirementAge",
+        "jobDescription",
+        "jobDescriptionUrl",
+        "workingHrsPerWeek",
+        "region",
+        "employmentTerm",
+        "workSameAsHomeAddress",
+        "jobTitle",
+        "reportsTo",
+        "employmentType"
+      ],
+      "properties": {
+        "division": {
+          "title": "Division",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "workAddress": {
+          "title": "Workaddress",
+          "type": "object",
+          "required": [
+            "street1",
+            "street2",
+            "city",
+            "state",
+            "postalCode",
+            "country",
+            "countryCode",
+            "countryID"
+          ],
+          "properties": {
+            "street1": {
+              "title": "Street1",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "street2": {
+              "title": "Street2",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "city": {
+              "title": "City",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "state": {
+              "title": "State",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "postalCode": {
+              "title": "Postalcode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "country": {
+              "title": "Country",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "countryCode": {
+              "title": "Countrycode",
+              "type": ["null","string"],
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "countryID": {
+              "title": "Countryid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "termEndDate": {
+          "title": "Termenddate",
+          "type": "null",
+          "default": null
+        },
+        "isProbationApplicable": {
+          "title": "Isprobationapplicable",
+          "type": "null",
+          "default": null
+        },
+        "employmentDetails": {
+          "title": "Employmentdetails",
+          "type": "array",
+          "default": []
+        },
+        "employmentStatusDetails": {
+          "title": "Employmentstatusdetails",
+          "type": "array",
+          "default": [],
+          "items":{
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "effectiveStartDate",
+              "effectiveEndDate",
+              "status",
+              "statusChangeReason",
+              "rehireEligibility",
+              "comments",
+              "inactiveType",
+              "createDate"
+            ],
+            "properties": {
+              "effectiveStartDate": {
+                "title": "Effectivestartdate",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "effectiveEndDate": {
+                "title": "Effectiveenddate",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "status": {
+                "title": "Status",
+                "type": "integer",
+                "default": 0
+              },
+              "statusChangeReason": {
+                "title": "Statuschangereason",
+                "type": "integer",
+                "default": 0
+              },
+              "rehireEligibility": {
+                "title": "Rehireeligibility",
+                "type": "integer",
+                "default": 0
+              },
+              "comments": {
+                "title": "Comments",
+                "type": ["string","null"],
+                "default": null
+              },
+              "inactiveType": {
+                "title": "Inactivetype",
+                "type": "integer",
+                "default": 0
+              },
+              "createDate": {
+                "title": "Createdate",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              }
+            }
+          }
+
+        },
+        "department": {
+          "title": "Department",
+          "type": "object",
+          "required": [
+            "name",
+            "email"
+          ],
+          "properties": {
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "email": {
+              "title": "Email",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "compensationDetails": {
+          "title": "Compensationdetails",
+          "type": "object",
+          "required": [
+            "currency",
+            "payType",
+            "paymentSchedule",
+            "installmentsPaidAnnually",
+            "amount",
+            "isAdditionalMonthlyPayApplicable",
+            "noOfAdditionalMonthlyPayments",
+            "isOvertimeApplicable",
+            "totalHours"
+          ],
+          "properties": {
+            "currency": {
+              "title": "Currency",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "payType": {
+              "title": "Paytype",
+              "type": "integer",
+              "default": 0
+            },
+            "paymentSchedule": {
+              "title": "Paymentschedule",
+              "type": "integer",
+              "default": 0
+            },
+            "installmentsPaidAnnually": {
+              "title": "Installmentspaidannually",
+              "type": "integer",
+              "default": 0
+            },
+            "amount": {
+              "title": "Amount",
+              "type": "integer",
+              "default": 0
+            },
+            "isAdditionalMonthlyPayApplicable": {
+              "title": "Isadditionalmonthlypayapplicable",
+              "type": "boolean",
+              "default": true
+            },
+            "noOfAdditionalMonthlyPayments": {
+              "title": "Noofadditionalmonthlypayments",
+              "type": "integer",
+              "default": 0
+            },
+            "isOvertimeApplicable": {
+              "title": "Isovertimeapplicable",
+              "type":["boolean", "null"],
+              "default": null
+            },
+            "totalHours": {
+              "title": "Totalhours",
+              "type": "integer",
+              "default": 0
+            }
+          }
+        }
+      ,
+        "isNonCompeteRequired": {
+          "title": "Isnoncompeterequired",
+          "type": "null",
+          "default": null
+        },
+        "isCollectiveAgreementRequired": {
+          "title": "Iscollectiveagreementrequired",
+          "type": "null",
+          "default": null
+        },
+        "clientId": {
+          "title": "Clientid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "customerDetails": {
+          "title": "Customerdetails",
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "region",
+            "statusLabel"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "region": {
+              "title": "Region",
+              "type": "null",
+              "default": null
+            },
+            "statusLabel": {
+              "title": "Statuslabel",
+              "type": "null",
+              "default": null
+            }
+          }
+        }
+      ,
+        "seniorityDate": {
+          "title": "Senioritydate",
+          "type": "null",
+          "default": null
+        },
+        "employerNoticePeriod": {
+          "title": "Employernoticeperiod",
+          "type": "integer",
+          "default": 0
+        },
+        "employeeNoticePeriod": {
+          "title": "Employeenoticeperiod",
+          "type": "integer",
+          "default": 0
+        },
+        "employerNoticePeriodType": {
+          "title": "Employernoticeperiodtype",
+          "type": "integer",
+          "default": 0
+        },
+        "employeeNoticePeriodType": {
+          "title": "Employeenoticeperiodtype",
+          "type": "integer",
+          "default": 0
+        },
+        "targetStartDate": {
+          "title": "Targetstartdate",
+          "type": ["string","null"],
+          "default": null
+        },
+        "probationPeriodType": {
+          "title": "Probationperiodtype",
+          "type": "integer",
+          "default": 0
+        },
+        "probationPeriod": {
+          "title": "Probationperiod",
+          "type": "integer",
+          "default": 0
+        },
+        "probationEndDate": {
+          "title": "Probationenddate",
+          "type": "null",
+          "default": null
+        },
+        "retirementAge": {
+          "title": "Retirementage",
+          "type": "integer",
+          "default": 0
+        },
+        "jobDescription": {
+          "title": "Jobdescription",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "jobDescriptionUrl": {
+          "title": "Jobdescriptionurl",
+          "type": "null",
+          "default": null
+        },
+        "workingHrsPerWeek": {
+          "title": "Workinghrsperweek",
+          "type": "integer",
+          "default": 0
+        },
+        "region": {
+          "title": "Region",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "countryName": {
+          "title": "Countryname",
+          "type": ["null","string"],
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "countryID": {
+          "title": "Countryid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "employmentTerm": {
+          "title": "Employmentterm",
+          "type": "integer",
+          "default": 0
+        },
+        "workSameAsHomeAddress": {
+          "title": "Worksameashomeaddress",
+          "type": "boolean",
+          "default": true
+        },
+        "jobTitle": {
+          "title": "Jobtitle",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "reportsTo": {
+          "title": "Reportsto",
+          "type": "object",
+          "required": [
+            "employeeId",
+            "name",
+            "jobTitle",
+            "email",
+            "probationPeriod",
+            "probationStartDate",
+            "probationEndDate"
+          ],
+          "properties": {
+            "employeeId": {
+              "title": "Employeeid",
+              "type": "null",
+              "default": null
+            },
+            "name": {
+              "title": "Name",
+              "type": "null",
+              "default": null
+            },
+            "jobTitle": {
+              "title": "Jobtitle",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "email": {
+              "title": "Email",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "probationPeriod": {
+              "title": "Probationperiod",
+              "type": "integer",
+              "default": 0
+            },
+            "probationStartDate": {
+              "title": "Probationstartdate",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "probationEndDate": {
+              "title": "Probationenddate",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "employmentType": {
+          "title": "Employmenttype",
+          "type": "integer",
+          "default": 0
+        }
+      }
+    }
+  ,
+    "employmentStatus": {
+      "title": "Employmentstatus",
+      "type": "integer",
+      "default": 0
+    },
+    "compensation": {
+      "title": "Compensation",
+      "type": "null",
+      "default": null
+    },
+    "isClientHrSubmitted": {
+      "title": "Isclienthrsubmitted",
+      "type": "boolean",
+      "default": true
+    },
+    "rehireEligibility": {
+      "title": "Rehireeligibility",
+      "type": "integer",
+      "default": 0
+    },
+    "documents": {
+      "title": "Documents",
+      "type": "null",
+      "default": null
+    }
+  }
+}

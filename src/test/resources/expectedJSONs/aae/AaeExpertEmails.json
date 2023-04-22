@@ -1,0 +1,25 @@
+{
+  "responseCode": 200,
+  "message": "Fetched emails",
+  "errors": null,
+  "data": [
+    {
+      "userId": "ec5f6424-2e5e-4b7d-953e-9001c353d8d6",
+      "emailId": "atlas-admin@atlas.com",
+      "userName": null,
+      "fullName": "Atlas Admin"
+    },
+    {
+      "userId": "37cd9f52-3f23-47f1-bcc4-641ee95f873a",
+      "emailId": "aaeexpertmemberuser@some-org.com",
+      "userName": null,
+      "fullName": "AAE Expert Member"
+    },
+    {
+      "userId": "3a20d477-65ac-41cf-aa61-a5e19e41ea84",
+      "emailId": "aaeexpertmanageruser@some-org.com",
+      "userName": null,
+      "fullName": "AAE Expert Manager"
+    }
+  ]
+}

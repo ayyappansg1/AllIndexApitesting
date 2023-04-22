@@ -1,0 +1,36 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "id",
+      "code",
+      "description"
+    ],
+    "properties": {
+      "id": {
+        "title": "Id",
+        "type": "integer",
+        "default": 0
+      },
+      "code": {
+        "title": "Code",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "description": {
+        "title": "Description",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      }
+    }
+  }
+
+}

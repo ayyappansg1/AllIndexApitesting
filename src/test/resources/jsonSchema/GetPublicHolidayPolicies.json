@@ -1,0 +1,92 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "policyId",
+          "policyName",
+          "country",
+          "customer",
+          "status",
+          "countryCode",
+          "createdAt"
+        ],
+        "properties": {
+          "policyId": {
+            "title": "Policyid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "policyName": {
+            "title": "Policyname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "country": {
+            "title": "Country",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "customer": {
+            "title": "Customer",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "status": {
+            "title": "Status",
+            "type": "integer",
+            "default": 0
+          },
+          "countryCode": {
+            "title": "Countrycode",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "createdAt": {
+            "title": "Createdat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

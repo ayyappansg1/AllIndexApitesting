@@ -1,0 +1,368 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "null",
+      "default": null
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "default": [],
+          "items":{
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "contentType",
+              "supertopicId",
+              "supertopicContentId",
+              "supertopicName",
+              "supertopicContent",
+              "publishedDate",
+              "createdBy",
+              "regionId",
+              "regionName",
+              "countryId",
+              "countryName",
+              "tags",
+              "topics"
+            ],
+            "properties": {
+              "contentType": {
+                "title": "Contenttype",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "supertopicId": {
+                "title": "Supertopicid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "supertopicContentId": {
+                "title": "Supertopiccontentid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "supertopicName": {
+                "title": "Supertopicname",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "supertopicContent": {
+                "title": "Supertopiccontent",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "publishedDate": {
+                "title": "Publisheddate",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "createdBy": {
+                "title": "Createdby",
+                "type": ["string","null"],
+                "default": null
+              },
+              "regionId": {
+                "title": "Regionid",
+                "type": "integer",
+                "default": 0
+              },
+              "regionName": {
+                "title": "Regionname",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "countryId": {
+                "title": "Countryid",
+                "type": ["integer","null"],
+                "default": null
+              },
+              "countryName": {
+                "title": "Countryname",
+                "type": ["string","null"],
+                "default": null
+              },
+              "tags": {
+                "title": "Tags",
+                "type": "array",
+                "default": [],
+                "items":{
+                  "title": "Items",
+                  "type": "object",
+                  "required": [
+                    "tagid",
+                    "name"
+                  ],
+                  "properties": {
+                    "tagid": {
+                      "title": "Tagid",
+                      "type": "string",
+                      "default": "",
+                      "pattern": "^.*$"
+                    },
+                    "name": {
+                      "title": "Name",
+                      "type": "string",
+                      "default": "",
+                      "pattern": "^.*$"
+                    }
+                  }
+                }
+
+              },
+              "topics": {
+                "title": "Topics",
+                "type": "array",
+                "default": [],
+                "items":{
+                  "title": "Items",
+                  "type": "object",
+                  "required": [
+                    "topicId",
+                    "topicContentId",
+                    "topicName",
+                    "topicContent",
+                    "topicContentType",
+                    "topicContentTypeName",
+                    "publishedDate",
+                    "createdBy",
+                    "tags",
+                    "imageUrl",
+                    "subTopics"
+                  ],
+                  "properties": {
+                    "topicId": {
+                      "title": "Topicid",
+                      "type": "string",
+                      "default": "",
+                      "pattern": "^.*$"
+                    },
+                    "topicContentId": {
+                      "title": "Topiccontentid",
+                      "type": "string",
+                      "default": "",
+                      "pattern": "^.*$"
+                    },
+                    "topicName": {
+                      "title": "Topicname",
+                      "type": "string",
+                      "default": "",
+                      "pattern": "^.*$"
+                    },
+                    "topicContent": {
+                      "title": "Topiccontent",
+                      "type": ["null","string"],
+                      "default": "",
+                      "pattern": "^.*$"
+                    },
+                    "topicContentType": {
+                      "title": "Topiccontenttype",
+                      "type": "integer",
+                      "default": 0
+                    },
+                    "topicContentTypeName": {
+                      "title": "Topiccontenttypename",
+                      "type": "string",
+                      "default": "",
+                      "pattern": "^.*$"
+                    },
+                    "publishedDate": {
+                      "title": "Publisheddate",
+                      "type": "string",
+                      "default": "",
+                      "pattern": "^.*$"
+                    },
+                    "createdBy": {
+                      "title": "Createdby",
+                      "type": ["string","null"],
+                      "default": null
+                    },
+                    "tags": {
+                      "title": "Tags",
+                      "type": "array",
+                      "default": [],
+                      "items":{
+                        "title": "Items",
+                        "type": "object",
+                        "required": [
+                          "tagid",
+                          "name"
+                        ],
+                        "properties": {
+                          "tagid": {
+                            "title": "Tagid",
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                          },
+                          "name": {
+                            "title": "Name",
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                          }
+                        }
+                      }
+
+                    },
+                    "imageUrl": {
+                      "title": "Imageurl",
+                      "type": ["string","null"],
+                      "default": null
+                    },
+                    "subTopics": {
+                      "title": "Subtopics",
+                      "type": "array",
+                      "default": [],
+                      "items":{
+                        "title": "Items",
+                        "type": "object",
+                        "required": [
+                          "subTopicId",
+                          "subTopicContentId",
+                          "subTopicName",
+                          "subTopicContent",
+                          "subTopicContentType",
+                          "subTopicContentTypeName",
+                          "publishedDate",
+                          "createdBy",
+                          "tags",
+                          "imageUrl",
+                          "tertiaryTopics"
+                        ],
+                        "properties": {
+                          "subTopicId": {
+                            "title": "Subtopicid",
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                          },
+                          "subTopicContentId": {
+                            "title": "Subtopiccontentid",
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                          },
+                          "subTopicName": {
+                            "title": "Subtopicname",
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                          },
+                          "subTopicContent": {
+                            "title": "Subtopiccontent",
+                            "type": ["null","string"],
+                            "default": "",
+                            "pattern": "^.*$"
+                          },
+                          "subTopicContentType": {
+                            "title": "Subtopiccontenttype",
+                            "type": "integer",
+                            "default": 0
+                          },
+                          "subTopicContentTypeName": {
+                            "title": "Subtopiccontenttypename",
+                            "type": ["string","null"],
+                            "default": null
+                          },
+                          "publishedDate": {
+                            "title": "Publisheddate",
+                            "type": "string",
+                            "default": "",
+                            "pattern": "^.*$"
+                          },
+                          "createdBy": {
+                            "title": "Createdby",
+                            "type": ["string","null"],
+                            "default": null
+                          },
+                          "tags": {
+                            "title": "Tags",
+                            "type": "array",
+                            "default": [],
+                            "items":{
+                              "title": "Items",
+                              "type": "object",
+                              "required": [
+                                "tagid",
+                                "name"
+                              ],
+                              "properties": {
+                                "tagid": {
+                                  "title": "Tagid",
+                                  "type": "string",
+                                  "default": "",
+                                  "pattern": "^.*$"
+                                },
+                                "name": {
+                                  "title": "Name",
+                                  "type": "string",
+                                  "default": "",
+                                  "pattern": "^.*$"
+                                }
+                              }
+                            }
+
+                          },
+                          "imageUrl": {
+                            "title": "Imageurl",
+                            "type": ["string","null"],
+                            "default": null
+                          },
+                          "tertiaryTopics": {
+                            "title": "Tertiarytopics",
+                            "type": "array",
+                            "default": []
+                          }
+                        }
+                      }
+
+                    }
+                  }
+                }
+
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}

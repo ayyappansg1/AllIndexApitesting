@@ -1,0 +1,70 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "null",
+      "default": null
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "completedHours",
+        "assigedHours",
+        "submittedQueryCount",
+        "inprogressQueryCount",
+        "completedQueryCount"
+      ],
+      "properties": {
+        "completedHours": {
+          "title": "Completedhours",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "assigedHours": {
+          "title": "Assigedhours",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "submittedQueryCount": {
+          "title": "Submittedquerycount",
+          "type": "integer",
+          "default": 0
+        },
+        "inprogressQueryCount": {
+          "title": "Inprogressquerycount",
+          "type": "integer",
+          "default": 0
+        },
+        "completedQueryCount": {
+          "title": "Completedquerycount",
+          "type": "integer",
+          "default": 0
+        }
+      }
+    }
+
+  }
+}

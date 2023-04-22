@@ -1,0 +1,97 @@
+{
+  "responseCode": 200,
+  "message": null,
+  "errors": null,
+  "data": [
+    {
+      "name": "Medical",
+      "displayOrder": 1,
+      "createdBy": "0efe05dd-673e-4cee-978c-82ec32060fe7",
+      "createdDate": "2022-04-12T09:34:09.3633333",
+      "modifiedBy": "707617e1-bce1-47b0-adb8-b9ea9fbec47b",
+      "modifiedDate": "2022-04-12T09:34:09.3633333",
+      "id": "bcdef11b-4f3e-48cd-af8a-18ce9e487f6f"
+    },
+    {
+      "name": "Pension",
+      "displayOrder": 7,
+      "createdBy": "6c431955-7e48-4fe9-88c1-bf5e2324fe45",
+      "createdDate": "2022-04-12T09:34:09.38",
+      "modifiedBy": "a73ee1b1-8b98-4d9f-8f80-9f4dbaf9bd36",
+      "modifiedDate": "2022-04-12T09:34:09.38",
+      "id": "bc39f289-870a-4753-821e-33e6e88fa2ab"
+    },
+    {
+      "name": "Travel",
+      "displayOrder": 6,
+      "createdBy": "5f281dba-8a31-4340-8825-f1fb61e4e57c",
+      "createdDate": "2022-04-12T09:34:09.38",
+      "modifiedBy": "af7291b7-1f85-4860-aec4-bc7560aa0c5c",
+      "modifiedDate": "2022-04-12T09:34:09.38",
+      "id": "2117c456-d549-4cdb-99ad-35c4e60f96a2"
+    },
+    {
+      "name": "Employee Assistance Program",
+      "displayOrder": 8,
+      "createdBy": "3f332114-e666-490d-a93a-356bd632ce6a",
+      "createdDate": "2022-04-12T09:34:09.3833333",
+      "modifiedBy": "f3596933-5aa9-449a-b0bf-d672ac6ee3d7",
+      "modifiedDate": "2022-04-12T09:34:09.3833333",
+      "id": "7a8a7aa1-a783-4917-9d6a-5115a0d98f50"
+    },
+    {
+      "name": "Dental & Vision",
+      "displayOrder": 4,
+      "createdBy": "01934a38-0ba5-4441-bdd7-8c32f570f6c6",
+      "createdDate": "2022-04-12T09:34:09.3733333",
+      "modifiedBy": "79bff35e-606f-4596-8e2d-36beb13bd5a3",
+      "modifiedDate": "2022-04-12T09:34:09.3733333",
+      "id": "c4f294c4-01e9-4e82-9f05-57b5d9785e57"
+    },
+    {
+      "name": "Dental",
+      "displayOrder": 2,
+      "createdBy": "89be9e56-6b49-460e-a470-ffc9e854ad79",
+      "createdDate": "2022-04-12T09:34:09.37",
+      "modifiedBy": "cfa90114-1648-4c29-a5e7-ea529c7e7491",
+      "modifiedDate": "2022-04-12T09:34:09.37",
+      "id": "d1626e6e-48a7-4f80-9896-6bee5a63d286"
+    },
+    {
+      "name": "Allowances",
+      "displayOrder": 9,
+      "createdBy": "6bccfe82-14ab-4b8c-9363-5b291e6bf6d4",
+      "createdDate": "2022-04-12T09:34:09.3866667",
+      "modifiedBy": "8d35fc2a-ea70-419e-b5d9-45c7d269261e",
+      "modifiedDate": "2022-04-12T09:34:09.3866667",
+      "id": "03df2a8c-edac-49c6-b7e3-7a4712cd537f"
+    },
+    {
+      "name": "Vision",
+      "displayOrder": 3,
+      "createdBy": "41412ba3-a5d6-4c37-9078-cf1fcf67c537",
+      "createdDate": "2022-04-12T09:34:09.37",
+      "modifiedBy": "60989e14-2059-40e3-8092-d1d9aa2f7194",
+      "modifiedDate": "2022-04-12T09:34:09.37",
+      "id": "78cd1062-8e3b-4e8b-b6d7-ade091d9085d"
+    },
+    {
+      "name": "Other",
+      "displayOrder": 10,
+      "createdBy": "35c78836-6e48-4b90-86c6-845ffc9a3c9a",
+      "createdDate": "2022-04-12T09:34:09.39",
+      "modifiedBy": "6d5596bc-d5f5-42cd-bcd4-13fc7e9cbbe4",
+      "modifiedDate": "2022-04-12T09:34:09.39",
+      "id": "79e46b3f-d642-46ae-b97e-b3962a0e107a"
+    },
+    {
+      "name": "Life, PA, STD, LTD",
+      "displayOrder": 5,
+      "createdBy": "7f8183c2-4e95-4df9-b656-2610208b60f8",
+      "createdDate": "2022-04-12T09:34:09.3766667",
+      "modifiedBy": "75951a38-efd2-4ae4-a1fb-43e5af7bd1bb",
+      "modifiedDate": "2022-04-12T09:34:09.3766667",
+      "id": "c18c79a8-b386-425f-bf1d-ece490f428a6"
+    }
+  ]
+}

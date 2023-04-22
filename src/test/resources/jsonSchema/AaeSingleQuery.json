@@ -1,0 +1,696 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "id",
+        "requestedUserId",
+        "expertUserId",
+        "expertUser",
+        "requestedUser",
+        "countryId",
+        "countryName",
+        "industryId",
+        "industry",
+        "hasAgreement",
+        "agreementUploadId",
+        "needKickOffCall",
+        "noteForInternalView",
+        "queryStatusId",
+        "queryStatus",
+        "referenceNumber",
+        "reqUserCompanyId",
+        "areaToClarify",
+        "hasEmployeesInCountry",
+        "isActive",
+        "isDeleted",
+        "createdAt",
+        "updatedAt",
+        "createdBy",
+        "updatedBy",
+        "timetrackerTotaltime",
+        "timeTrackers",
+        "queryEstimate",
+        "uploads"
+      ],
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "requestedUserId": {
+          "title": "Requesteduserid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "expertUserId": {
+          "title": "Expertuserid",
+          "type": ["null","string"],
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "expertUser": {
+          "title": "Expertuser",
+          "type": ["null","object"],
+          "required": [
+            "userId",
+            "firstName",
+            "lastName",
+            "isActive",
+            "fullName",
+            "emailId",
+            "companyId",
+            "documentLocker"
+          ],
+          "properties": {
+            "userId": {
+              "title": "Userid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "firstName": {
+              "title": "Firstname",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "lastName": {
+              "title": "Lastname",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "isActive": {
+              "title": "Isactive",
+              "type": "boolean",
+              "default": true
+            },
+            "fullName": {
+              "title": "Fullname",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "emailId": {
+              "title": "Emailid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "companyId": {
+              "title": "Companyid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "documentLocker": {
+              "title": "Documentlocker",
+              "type": ["null","object"],
+              "required": [
+                "userId",
+                "lockerId",
+                "lockerLocation",
+                "region",
+                "creationDateTime"
+              ],
+              "properties": {
+                "userId": {
+                  "title": "Userid",
+                  "type": "null",
+                  "default": null
+                },
+                "lockerId": {
+                  "title": "Lockerid",
+                  "type": "string",
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "lockerLocation": {
+                  "title": "Lockerlocation",
+                  "type": "null",
+                  "default": null
+                },
+                "region": {
+                  "title": "Region",
+                  "type": "null",
+                  "default": null
+                },
+                "creationDateTime": {
+                  "title": "Creationdatetime",
+                  "type": "string",
+                  "default": "",
+                  "pattern": "^.*$"
+                }
+              }
+            }
+
+          }
+        }
+      ,
+        "requestedUser": {
+          "title": "Requesteduser",
+          "type": "null",
+          "default": null
+        },
+        "countryId": {
+          "title": "Countryid",
+          "type": "integer",
+          "default": 0
+        },
+        "countryName": {
+          "title": "Countryname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "industryId": {
+          "title": "Industryid",
+          "type": "integer",
+          "default": 0
+        },
+        "industry": {
+          "title": "Industry",
+          "type": "object",
+          "required": [
+            "id",
+            "industryName"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer",
+              "default": 0
+            },
+            "industryName": {
+              "title": "Industryname",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "hasAgreement": {
+          "title": "Hasagreement",
+          "type": "boolean",
+          "default": true
+        },
+        "agreementUploadId": {
+          "title": "Agreementuploadid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "needKickOffCall": {
+          "title": "Needkickoffcall",
+          "type": "boolean",
+          "default": true
+        },
+        "noteForInternalView": {
+          "title": "Noteforinternalview",
+          "type": "array",
+          "default": [],
+          "items":{
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "id",
+              "queryId",
+              "noteForInternalView",
+              "isActive",
+              "isDeleted",
+              "createdAt",
+              "updatedAt",
+              "createdBy",
+              "updatedBy",
+              "updatedByUserName"
+            ],
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "queryId": {
+                "title": "Queryid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "noteForInternalView": {
+                "title": "Noteforinternalview",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "isActive": {
+                "title": "Isactive",
+                "type": "boolean",
+                "default": true
+              },
+              "isDeleted": {
+                "title": "Isdeleted",
+                "type": "boolean",
+                "default": true
+              },
+              "createdAt": {
+                "title": "Createdat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedAt": {
+                "title": "Updatedat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "createdBy": {
+                "title": "Createdby",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedBy": {
+                "title": "Updatedby",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedByUserName": {
+                "title": "Updatedbyusername",
+                "type": ["null","string"],
+                "default": "",
+                "pattern": "^.*$"
+              }
+            }
+          }
+
+        },
+        "queryStatusId": {
+          "title": "Querystatusid",
+          "type": "integer",
+          "default": 0
+        },
+        "queryStatus": {
+          "title": "Querystatus",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "referenceNumber": {
+          "title": "Referencenumber",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "reqUserCompanyId": {
+          "title": "Requsercompanyid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "areaToClarify": {
+          "title": "Areatoclarify",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "hasEmployeesInCountry": {
+          "title": "Hasemployeesincountry",
+          "type": "boolean",
+          "default": true
+        },
+        "isActive": {
+          "title": "Isactive",
+          "type": "boolean",
+          "default": true
+        },
+        "isDeleted": {
+          "title": "Isdeleted",
+          "type": "boolean",
+          "default": true
+        },
+        "createdAt": {
+          "title": "Createdat",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "updatedAt": {
+          "title": "Updatedat",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "createdBy": {
+          "title": "Createdby",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "updatedBy": {
+          "title": "Updatedby",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "timetrackerTotaltime": {
+          "title": "Timetrackertotaltime",
+          "type": "object",
+          "required": [
+            "totalHours",
+            "totalMinutes",
+            "totalBillableHours",
+            "totalBillableMinutes"
+          ],
+          "properties": {
+            "totalHours": {
+              "title": "Totalhours",
+              "type": "integer",
+              "default": 0
+            },
+            "totalMinutes": {
+              "title": "Totalminutes",
+              "type": "integer",
+              "default": 0
+            },
+            "totalBillableHours": {
+              "title": "Totalbillablehours",
+              "type": "integer",
+              "default": 0
+            },
+            "totalBillableMinutes": {
+              "title": "Totalbillableminutes",
+              "type": "integer",
+              "default": 0
+            }
+          }
+        }
+      ,
+        "timeTrackers": {
+          "title": "Timetrackers",
+          "type": ["array","null"],
+          "default": null
+        },
+        "queryEstimate": {
+          "title": "Queryestimate",
+          "type": ["null","object"],
+          "required": [
+            "id",
+            "queryId",
+            "hours",
+            "minutes",
+            "noteForUser",
+            "statusId",
+            "userCancellationNote",
+            "isEstimationMilSent",
+            "isActive",
+            "isDeleted",
+            "createdAt",
+            "updatedAt",
+            "createdBy",
+            "updatedBy",
+            "balanceHour",
+            "balanceMinutes",
+            "usedHour",
+            "usedminutes",
+            "approvedAt",
+            "approvedBy",
+            "status",
+            "updatedByUserName",
+            "referenceNo"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "queryId": {
+              "title": "Queryid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "hours": {
+              "title": "Hours",
+              "type": "integer",
+              "default": 0
+            },
+            "minutes": {
+              "title": "Minutes",
+              "type": "integer",
+              "default": 0
+            },
+            "noteForUser": {
+              "title": "Noteforuser",
+              "type": ["string","null"],
+              "default": null
+            },
+            "statusId": {
+              "title": "Statusid",
+              "type": "integer",
+              "default": 0
+            },
+            "userCancellationNote": {
+              "title": "Usercancellationnote",
+              "type": "null",
+              "default": null
+            },
+            "isEstimationMilSent": {
+              "title": "Isestimationmilsent",
+              "type": "boolean",
+              "default": true
+            },
+            "isActive": {
+              "title": "Isactive",
+              "type": "boolean",
+              "default": true
+            },
+            "isDeleted": {
+              "title": "Isdeleted",
+              "type": "boolean",
+              "default": true
+            },
+            "createdAt": {
+              "title": "Createdat",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "updatedAt": {
+              "title": "Updatedat",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "createdBy": {
+              "title": "Createdby",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "updatedBy": {
+              "title": "Updatedby",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "balanceHour": {
+              "title": "Balancehour",
+              "type": "integer",
+              "default": 0
+            },
+            "balanceMinutes": {
+              "title": "Balanceminutes",
+              "type": "integer",
+              "default": 0
+            },
+            "usedHour": {
+              "title": "Usedhour",
+              "type": ["integer","null"],
+              "default": null
+            },
+            "usedminutes": {
+              "title": "Usedminutes",
+              "type": ["integer","null"],
+              "default": null
+            },
+            "approvedAt": {
+              "title": "Approvedat",
+              "type": "null",
+              "default": null
+            },
+            "approvedBy": {
+              "title": "Approvedby",
+              "type": "null",
+              "default": null
+            },
+            "status": {
+              "title": "Status",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "updatedByUserName": {
+              "title": "Updatedbyusername",
+              "type": "null",
+              "default": null
+            },
+            "referenceNo": {
+              "title": "Referenceno",
+              "type": "null",
+              "default": null
+            }
+          }
+        }
+      ,
+        "uploads": {
+          "title": "Uploads",
+          "type": "array",
+          "default": [],
+          "items":{
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "id",
+              "queryId",
+              "documentId",
+              "title",
+              "size",
+              "uploadedDateTime",
+              "lockerId",
+              "url",
+              "isActive",
+              "isDeleted",
+              "createdAt",
+              "updatedAt",
+              "createdBy",
+              "updatedBy"
+            ],
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "queryId": {
+                "title": "Queryid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "documentId": {
+                "title": "Documentid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "title": {
+                "title": "Title",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "size": {
+                "title": "Size",
+                "type": "integer",
+                "default": 0
+              },
+              "uploadedDateTime": {
+                "title": "Uploadeddatetime",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "lockerId": {
+                "title": "Lockerid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "url": {
+                "title": "Url",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "isActive": {
+                "title": "Isactive",
+                "type": "boolean",
+                "default": true
+              },
+              "isDeleted": {
+                "title": "Isdeleted",
+                "type": "boolean",
+                "default": true
+              },
+              "createdAt": {
+                "title": "Createdat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedAt": {
+                "title": "Updatedat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "createdBy": {
+                "title": "Createdby",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedBy": {
+                "title": "Updatedby",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              }
+            }
+          }
+
+        }
+        }
+      }
+    }
+
+  }
+

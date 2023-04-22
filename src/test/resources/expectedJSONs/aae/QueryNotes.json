@@ -1,0 +1,19 @@
+{
+  "responseCode": 200,
+  "message": null,
+  "errors": null,
+  "data": [
+    {
+      "id": "5248147b-fd7d-4489-b330-7490f0348652",
+      "queryId": "a81458c6-b9f1-4639-8178-06a976e3903e",
+      "noteForInternalView": "Automation Generated",
+      "isActive": true,
+      "isDeleted": false,
+      "createdAt": "2022-07-22T07:51:10.433884",
+      "updatedAt": "2022-07-22T07:51:10.433932",
+      "createdBy": "3a20d477-65ac-41cf-aa61-a5e19e41ea84",
+      "updatedBy": "3a20d477-65ac-41cf-aa61-a5e19e41ea84",
+      "updatedByUserName": null
+    }
+  ]
+}

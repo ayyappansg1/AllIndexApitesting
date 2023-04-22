@@ -1,0 +1,103 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "page",
+    "pageSize",
+    "totalCount",
+    "employees"
+  ],
+  "properties": {
+    "page": {
+      "title": "Page",
+      "type": "integer",
+      "default": 0
+    },
+    "pageSize": {
+      "title": "PageSize",
+      "type": "integer",
+      "default": 0
+    },
+    "totalCount": {
+      "title": "TotalCount",
+      "type": "integer",
+      "default": 0
+    },
+    "employees": {
+      "title": "Employees",
+      "type": "array",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "employeeID",
+          "firstName",
+          "lastName",
+          "countryName",
+          "countryCode",
+          "egsStartDate",
+          "createdDate",
+          "employmentStatus",
+          "jobTitile"
+        ],
+        "properties": {
+          "employeeID": {
+            "title": "EmployeeId",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "firstName": {
+            "title": "Firstname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "lastName": {
+            "title": "Lastname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "countryName": {
+            "title": "CountryName",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "countryCode": {
+            "title": "CountryCode",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "egsStartDate": {
+            "title": "EgsStartDate",
+            "type": ["string", "null"],
+            "default": null
+          },
+          "createdDate": {
+            "title": "CreatedDate",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "employmentStatus": {
+            "title": "EmploymentStatus",
+            "type": "integer",
+            "default": 0
+          },
+          "jobTitile": {
+            "title": "JobTitle",
+            "type": ["string", "null"],
+            "default": null
+          }
+        }
+      }
+
+    }
+  }
+}

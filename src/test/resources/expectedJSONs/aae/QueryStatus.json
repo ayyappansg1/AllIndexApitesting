@@ -1,0 +1,51 @@
+{
+  "responseCode": 200,
+  "message": null,
+  "errors": null,
+  "data": [
+    {
+      "id": 1,
+      "status": "New!",
+      "isActive": true,
+      "isDeleted": false,
+      "createdAt": "2021-09-30T06:59:41.576991",
+      "updatedAt": "2021-09-30T06:59:41.576991",
+      "createdBy": "8e58e971-b839-4897-ba36-ab6a1a06bb1b",
+      "updatedBy": "8e58e971-b839-4897-ba36-ab6a1a06bb1b",
+      "displayOrder": "A"
+    },
+    {
+      "id": 2,
+      "status": "In Progress",
+      "isActive": true,
+      "isDeleted": false,
+      "createdAt": "2021-09-30T06:59:41.576991",
+      "updatedAt": "2021-09-30T06:59:41.576991",
+      "createdBy": "8e58e971-b839-4897-ba36-ab6a1a06bb1b",
+      "updatedBy": "8e58e971-b839-4897-ba36-ab6a1a06bb1b",
+      "displayOrder": "A"
+    },
+    {
+      "id": 3,
+      "status": "Completed",
+      "isActive": true,
+      "isDeleted": false,
+      "createdAt": "2021-09-30T06:59:41.576991",
+      "updatedAt": "2021-09-30T06:59:41.576991",
+      "createdBy": "8e58e971-b839-4897-ba36-ab6a1a06bb1b",
+      "updatedBy": "8e58e971-b839-4897-ba36-ab6a1a06bb1b",
+      "displayOrder": "A"
+    },
+    {
+      "id": 4,
+      "status": "Withdrawn",
+      "isActive": true,
+      "isDeleted": false,
+      "createdAt": "2021-09-30T06:59:41.576991",
+      "updatedAt": "2021-09-30T06:59:41.576991",
+      "createdBy": "8e58e971-b839-4897-ba36-ab6a1a06bb1b",
+      "updatedBy": "8e58e971-b839-4897-ba36-ab6a1a06bb1b",
+      "displayOrder": "A"
+    }
+  ]
+}

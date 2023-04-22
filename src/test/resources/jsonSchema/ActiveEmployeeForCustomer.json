@@ -1,0 +1,47 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "country",
+      "activeEmployees",
+      "terminatedEmployees",
+      "newEmployees",
+      "customerCount"
+    ],
+    "properties": {
+      "country": {
+        "title": "Country",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "activeEmployees": {
+        "title": "Activeemployees",
+        "type": "integer",
+        "default": 0
+      },
+      "terminatedEmployees": {
+        "title": "Terminatedemployees",
+        "type": "integer",
+        "default": 0
+      },
+      "newEmployees": {
+        "title": "Newemployees",
+        "type": "integer",
+        "default": 0
+      },
+      "customerCount": {
+        "title": "Customercount",
+        "type": "integer",
+        "default": 0
+      }
+    }
+  }
+
+}

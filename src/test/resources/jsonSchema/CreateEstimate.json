@@ -1,0 +1,204 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "id",
+        "queryId",
+        "hours",
+        "minutes",
+        "noteForUser",
+        "statusId",
+        "userCancellationNote",
+        "isEstimationMilSent",
+        "isActive",
+        "isDeleted",
+        "createdAt",
+        "updatedAt",
+        "createdBy",
+        "updatedBy",
+        "balanceHour",
+        "balanceMinutes",
+        "usedHour",
+        "usedminutes",
+        "approvedAt",
+        "approvedBy",
+        "totalPurchasedHour",
+        "totalAvailableHour",
+        "totalHourUsed",
+        "status",
+        "updatedByUserName",
+        "referenceNo"
+      ],
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "queryId": {
+          "title": "Queryid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "hours": {
+          "title": "Hours",
+          "type": "integer",
+          "default": 0
+        },
+        "minutes": {
+          "title": "Minutes",
+          "type": "integer",
+          "default": 0
+        },
+        "noteForUser": {
+          "title": "Noteforuser",
+          "type": ["null","string"],
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "statusId": {
+          "title": "Statusid",
+          "type": "integer",
+          "default": 0
+        },
+        "userCancellationNote": {
+          "title": "Usercancellationnote",
+          "type": "null",
+          "default": null
+        },
+        "isEstimationMilSent": {
+          "title": "Isestimationmilsent",
+          "type": "boolean",
+          "default": true
+        },
+        "isActive": {
+          "title": "Isactive",
+          "type": "boolean",
+          "default": true
+        },
+        "isDeleted": {
+          "title": "Isdeleted",
+          "type": "boolean",
+          "default": true
+        },
+        "createdAt": {
+          "title": "Createdat",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "updatedAt": {
+          "title": "Updatedat",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "createdBy": {
+          "title": "Createdby",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "updatedBy": {
+          "title": "Updatedby",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "balanceHour": {
+          "title": "Balancehour",
+          "type": "integer",
+          "default": 0
+        },
+        "balanceMinutes": {
+          "title": "Balanceminutes",
+          "type": "integer",
+          "default": 0
+        },
+        "usedHour": {
+          "title": "Usedhour",
+          "type": "null",
+          "default": null
+        },
+        "usedminutes": {
+          "title": "Usedminutes",
+          "type": "null",
+          "default": null
+        },
+        "approvedAt": {
+          "title": "Approvedat",
+          "type": "null",
+          "default": null
+        },
+        "approvedBy": {
+          "title": "Approvedby",
+          "type": "null",
+          "default": null
+        },
+        "totalPurchasedHour": {
+          "title": "Totalpurchasedhour",
+          "type": "null",
+          "default": null
+        },
+        "totalAvailableHour": {
+          "title": "Totalavailablehour",
+          "type": "null",
+          "default": null
+        },
+        "totalHourUsed": {
+          "title": "Totalhourused",
+          "type": "null",
+          "default": null
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "updatedByUserName": {
+          "title": "Updatedbyusername",
+          "type": "null",
+          "default": null
+        },
+        "referenceNo": {
+          "title": "Referenceno",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    }
+
+  }
+}

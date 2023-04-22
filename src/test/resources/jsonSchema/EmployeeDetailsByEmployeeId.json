@@ -1,0 +1,1489 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "atlasID",
+    "employeeId",
+    "fullName",
+    "personalDetails",
+    "contactDetails",
+    "jobDetails",
+    "currentJobDetails",
+    "bankingDetail",
+    "documentDetails",
+    "employmentStatus",
+    "compensation",
+    "documents",
+    "isPasswordSet",
+    "canEmployeeDelete",
+    "timeOffPolicies",
+    "updatedPolicyDate",
+    "lastLogin"
+  ],
+  "properties": {
+    "atlasID": {
+      "title": "Atlasid",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "employeeId": {
+      "title": "Employeeid",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "fullName": {
+      "title": "Fullname",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "personalDetails": {
+      "title": "Personaldetails",
+      "type": "object",
+      "required": [
+        "firstName",
+        "lastName",
+        "additionalGivenName",
+        "preferredName",
+        "suffix",
+        "title",
+        "taxId",
+        "gender",
+        "birthday",
+        "maritalStatus",
+        "homeAddress",
+        "isDualCitizen",
+        "citizenship",
+        "photoUrl",
+        "photoFileId",
+        "wseClassification",
+        "effectiveStartDate",
+        "effectiveEndDate",
+        "updatedByAtlasId",
+        "updatedAt",
+        "comments",
+        "dataVersionId",
+        "isLegallyAuthorized",
+        "pronoun",
+        "employeeVerification"
+      ],
+      "properties": {
+        "firstName": {
+          "title": "Firstname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "lastName": {
+          "title": "Lastname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "additionalGivenName": {
+          "title": "Additionalgivenname",
+          "type": ["null","string"],
+          "default": null
+        },
+        "preferredName": {
+          "title": "Preferredname",
+          "type": ["null","string"],
+          "default": null
+        },
+        "suffix": {
+          "title": "Suffix",
+          "type": ["null","string"],
+          "default": null
+        },
+        "title": {
+          "title": "Title",
+          "type": "integer",
+          "default": 0
+        },
+        "taxId": {
+          "title": "Taxid",
+          "type": ["null","string","integer"],
+          "default": null
+        },
+        "gender": {
+          "title": "Gender",
+          "type": "integer",
+          "default": 0
+        },
+        "birthday": {
+          "title": "Birthday",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "maritalStatus": {
+          "title": "Maritalstatus",
+          "type": "integer",
+          "default": 0
+        },
+        "homeAddress": {
+          "title": "Homeaddress",
+          "type": "object",
+          "required": [
+            "street1",
+            "street2",
+            "city",
+            "state",
+            "postalCode",
+            "country",
+            "countryCode",
+            "countryID"
+          ],
+          "properties": {
+            "street1": {
+              "title": "Street1",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "street2": {
+              "title": "Street2",
+              "type": ["null","string"],
+              "default": null
+            },
+            "city": {
+              "title": "City",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "state": {
+              "title": "State",
+              "type": ["null","string"],
+              "default": null
+            },
+            "postalCode": {
+              "title": "Postalcode",
+              "type": ["null","string","integer"],
+              "default": null
+            },
+            "country": {
+              "title": "Country",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "countryCode": {
+              "title": "Countrycode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "countryID": {
+              "title": "Countryid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "isDualCitizen": {
+          "title": "Isdualcitizen",
+          "type": ["null","boolean"],
+          "default": null
+        },
+        "citizenship": {
+          "title": "Citizenship",
+          "type": "array",
+          "default": [],
+          "items":{
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "nationalId",
+              "nationalIds",
+              "country",
+              "countryCode"
+            ],
+            "properties": {
+              "nationalId": {
+                "title": "Nationalid",
+                "type": ["null","string"],
+                "default": null
+              },
+              "nationalIds": {
+                "title": "Nationalids",
+                "type": "null",
+                "default": null
+              },
+              "country": {
+                "title": "Country",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "countryCode": {
+                "title": "Countrycode",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              }
+            }
+          }
+
+        },
+        "photoUrl": {
+          "title": "Photourl",
+          "type": ["null","string"],
+          "default": null
+        },
+        "photoFileId": {
+          "title": "Photofileid",
+          "type": ["null","string"],
+          "default": null
+        },
+        "wseClassification": {
+          "title": "Wseclassification",
+          "type": "integer",
+          "default": 0
+        },
+        "effectiveStartDate": {
+          "title": "Effectivestartdate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "effectiveEndDate": {
+          "title": "Effectiveenddate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "updatedByAtlasId": {
+          "title": "Updatedbyatlasid",
+          "type": ["null","string"],
+          "default": null
+        },
+        "updatedAt": {
+          "title": "Updatedat",
+          "type": ["null","string"],
+          "default": null
+        },
+        "comments": {
+          "title": "Comments",
+          "type": ["null","string"],
+          "default": null
+        },
+        "dataVersionId": {
+          "title": "Dataversionid",
+          "type": ["null","string"],
+          "default": null
+        },
+        "isLegallyAuthorized": {
+          "title": "Islegallyauthorized",
+          "type": "boolean",
+          "default": true
+        },
+        "pronoun": {
+          "title": "Pronoun",
+          "type": "object",
+          "required": [
+            "personalPronounId",
+            "personalPronoun",
+            "customPersonalPronoun"
+          ],
+          "properties": {
+            "personalPronounId": {
+              "title": "Personalpronounid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "personalPronoun": {
+              "title": "Personalpronoun",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "customPersonalPronoun": {
+              "title": "Custompersonalpronoun",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "employeeVerification": {
+          "title": "Employeeverification",
+          "type": "object",
+          "required": [
+            "isVerificationRequired",
+            "verificationStatus",
+            "retryVerificationCount"
+          ],
+          "properties": {
+            "isVerificationRequired": {
+              "title": "Isverificationrequired",
+              "type": "boolean",
+              "default": true
+            },
+            "verificationStatus": {
+              "title": "Verificationstatus",
+              "type": ["null","boolean"],
+              "default": null
+            },
+            "retryVerificationCount": {
+              "title": "Retryverificationcount",
+              "type": "integer",
+              "default": 0
+            }
+          }
+        }
+
+      }
+    }
+  ,
+    "contactDetails": {
+      "title": "Contactdetails",
+      "type": "object",
+      "required": [
+        "officeLandline",
+        "homeLandline",
+        "homeMobile",
+        "officeEmail",
+        "homeEmail",
+        "primaryContactEmail",
+        "effectiveStartDate",
+        "effectiveEndDate",
+        "updatedByAtlasId",
+        "updatedAt",
+        "dataVersionId",
+        "comments"
+      ],
+      "properties": {
+        "officeLandline": {
+          "title": "Officelandline",
+          "type": "object",
+          "required": [
+            "countryCode",
+            "number",
+            "extension"
+          ],
+          "properties": {
+            "countryCode": {
+              "title": "Countrycode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "number": {
+              "title": "Number",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "extension": {
+              "title": "Extension",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "homeLandline": {
+          "title": "Homelandline",
+          "type": "object",
+          "required": [
+            "countryCode",
+            "number",
+            "extension"
+          ],
+          "properties": {
+            "countryCode": {
+              "title": "Countrycode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "number": {
+              "title": "Number",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "extension": {
+              "title": "Extension",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "homeMobile": {
+          "title": "Homemobile",
+          "type": "object",
+          "required": [
+            "countryCode",
+            "number"
+          ],
+          "properties": {
+            "countryCode": {
+              "title": "Countrycode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "number": {
+              "title": "Number",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "officeEmail": {
+          "title": "Officeemail",
+          "type": ["null","string"],
+          "default": null
+        },
+        "homeEmail": {
+          "title": "Homeemail",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "primaryContactEmail": {
+          "title": "Primarycontactemail",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "effectiveStartDate": {
+          "title": "Effectivestartdate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "effectiveEndDate": {
+          "title": "Effectiveenddate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "updatedByAtlasId": {
+          "title": "Updatedbyatlasid",
+          "type": ["null","string"],
+          "default": null
+        },
+        "updatedAt": {
+          "title": "Updatedat",
+          "type": ["null","string"],
+          "default": null
+        },
+        "dataVersionId": {
+          "title": "Dataversionid",
+          "type": ["null","string"],
+          "default": null
+        },
+        "comments": {
+          "title": "Comments",
+          "type": ["null","string"],
+          "default": null
+        }
+      }
+    }
+  ,
+    "jobDetails": {
+      "title": "Jobdetails",
+      "type": ["null","string"],
+      "default": null
+    },
+    "currentJobDetails": {
+      "title": "Currentjobdetails",
+      "type": "object",
+      "required": [
+        "terminationDate",
+        "reportsTo",
+        "employmentDetails",
+        "department",
+        "workAddress",
+        "customerDetails",
+        "compensationDetails",
+        "atlasStartDate",
+        "comments",
+        "effectiveStartDate",
+        "effectiveEndDate",
+        "payGroup",
+        "dataVersionId",
+        "dataVersionIdCD",
+        "dataVersionIdOD",
+        "dataVersionIdCT",
+        "dataVersionIdET",
+        "dataVersionIdPGT",
+        "jobTitle",
+        "division",
+        "employmentType",
+        "egsStartDate",
+        "clientId",
+        "termEndDate",
+        "targetStartDate",
+        "isProbationApplicable",
+        "probationPeriod",
+        "probationPeriodType",
+        "probationEndDate",
+        "jobDescription",
+        "retirementAge",
+        "jobDescriptionUrl",
+        "jobDescriptionFileId",
+        "jobDescriptionFileName",
+        "jobDescriptionFileSize",
+        "isCollectiveAgreementRequired",
+        "isNonCompeteRequired",
+        "seniorityDate",
+        "employeeNoticePeriod",
+        "employerNoticePeriod",
+        "employeeNoticePeriodType",
+        "employerNoticePeriodType",
+        "workingHrsPerWeek",
+        "employmentTerm",
+        "region",
+        "targetDateByClient",
+        "workSameAsHomeAddress"
+      ],
+      "properties": {
+        "terminationDate": {
+          "title": "Terminationdate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "reportsTo": {
+          "title": "Reportsto",
+          "type": "object",
+          "required": [
+            "employeeId",
+            "name",
+            "jobTitle",
+            "email",
+            "probationPeriod",
+            "probationStartDate",
+            "probationEndDate",
+            "managerRole",
+            "atlasId",
+            "isManagerInternalEmployee"
+          ],
+          "properties": {
+            "employeeId": {
+              "title": "Employeeid",
+              "type": ["null","integer"],
+              "default": null
+            },
+            "name": {
+              "title": "Name",
+              "type": ["null","string"],
+              "default": null
+            },
+            "jobTitle": {
+              "title": "Jobtitle",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "email": {
+              "title": "Email",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "probationPeriod": {
+              "title": "Probationperiod",
+              "type": "integer",
+              "default": 0
+            },
+            "probationStartDate": {
+              "title": "Probationstartdate",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "probationEndDate": {
+              "title": "Probationenddate",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "managerRole": {
+              "title": "Managerrole",
+              "type": ["null","string"],
+              "default": null
+            },
+            "atlasId": {
+              "title": "Atlasid",
+              "type": ["null","integer"],
+              "default": null
+            },
+            "isManagerInternalEmployee": {
+              "title": "Ismanagerinternalemployee",
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      ,
+        "employmentDetails": {
+          "title": "Employmentdetails",
+          "type": "object",
+          "required": [
+            "jobTitle",
+            "employmentStatus",
+            "reportsTo",
+            "effectiveStartDate",
+            "effectiveEndDate",
+            "employmentType",
+            "workingHoursPerWeek",
+            "salary",
+            "division",
+            "employmentTerm"
+          ],
+          "properties": {
+            "jobTitle": {
+              "title": "Jobtitle",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "employmentStatus": {
+              "title": "Employmentstatus",
+              "type": "integer",
+              "default": 0
+            },
+            "reportsTo": {
+              "title": "Reportsto",
+              "type": "object",
+              "required": [
+                "employeeId",
+                "name",
+                "jobTitle",
+                "email",
+                "probationPeriod",
+                "probationStartDate",
+                "probationEndDate",
+                "managerRole",
+                "atlasId",
+                "isManagerInternalEmployee"
+              ],
+              "properties": {
+                "employeeId": {
+                  "title": "Employeeid",
+                  "type": ["null","integer"],
+                  "default": null
+                },
+                "name": {
+                  "title": "Name",
+                  "type": ["null","string"],
+                  "default": null
+                },
+                "jobTitle": {
+                  "title": "Jobtitle",
+                  "type": "string",
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "email": {
+                  "title": "Email",
+                  "type": "string",
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "probationPeriod": {
+                  "title": "Probationperiod",
+                  "type": "integer",
+                  "default": 0
+                },
+                "probationStartDate": {
+                  "title": "Probationstartdate",
+                  "type": "string",
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "probationEndDate": {
+                  "title": "Probationenddate",
+                  "type": "string",
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "managerRole": {
+                  "title": "Managerrole",
+                  "type": ["null","string"],
+                  "default": null
+                },
+                "atlasId": {
+                  "title": "Atlasid",
+                  "type": ["null","string","integer"],
+                  "default": null
+                },
+                "isManagerInternalEmployee": {
+                  "title": "Ismanagerinternalemployee",
+                  "type": "boolean",
+                  "default": true
+                }
+              }
+            }
+          ,
+            "effectiveStartDate": {
+              "title": "Effectivestartdate",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "effectiveEndDate": {
+              "title": "Effectiveenddate",
+              "type": ["null","string"],
+              "default": null
+            },
+            "employmentType": {
+              "title": "Employmenttype",
+              "type": ["null","string"],
+              "default": null
+            },
+            "workingHoursPerWeek": {
+              "title": "Workinghoursperweek",
+              "type": "integer",
+              "default": 0
+            },
+            "salary": {
+              "title": "Salary",
+              "type": ["null","string"],
+              "default": null
+            },
+            "division": {
+              "title": "Division",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "employmentTerm": {
+              "title": "Employmentterm",
+              "type": ["null","string"],
+              "default": null
+            }
+          }
+        }
+      ,
+        "department": {
+          "title": "Department",
+          "type": "object",
+          "required": [
+            "name",
+            "email"
+          ],
+          "properties": {
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "email": {
+              "title": "Email",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "workAddress": {
+          "title": "Workaddress",
+          "type": "object",
+          "required": [
+            "street1",
+            "street2",
+            "city",
+            "state",
+            "postalCode",
+            "country",
+            "countryCode",
+            "countryID"
+          ],
+          "properties": {
+            "street1": {
+              "title": "Street1",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "street2": {
+              "title": "Street2",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "city": {
+              "title": "City",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "state": {
+              "title": "State",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "postalCode": {
+              "title": "Postalcode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "country": {
+              "title": "Country",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "countryCode": {
+              "title": "Countrycode",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "countryID": {
+              "title": "Countryid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "customerDetails": {
+          "title": "Customerdetails",
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "region",
+            "statusLabel"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "region": {
+              "title": "Region",
+              "type": ["null","string"],
+              "default": null
+            },
+            "statusLabel": {
+              "title": "Statuslabel",
+              "type": ["null","string"],
+              "default": null
+            }
+          }
+        }
+      ,
+        "compensationDetails": {
+          "title": "Compensationdetails",
+          "type": "object",
+          "required": [
+            "lppId",
+            "currency",
+            "payType",
+            "paymentSchedule",
+            "installmentsPaidAnnually",
+            "amount",
+            "isAdditionalMonthlyPayApplicable",
+            "noOfAdditionalMonthlyPayments",
+            "isOvertimeApplicable",
+            "totalHours",
+            "changeReason"
+          ],
+          "properties": {
+            "lppId": {
+              "title": "Lppid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "currency": {
+              "title": "Currency",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "payType": {
+              "title": "Paytype",
+              "type": "integer",
+              "default": 0
+            },
+            "paymentSchedule": {
+              "title": "Paymentschedule",
+              "type": ["null","string"],
+              "default": null
+            },
+            "installmentsPaidAnnually": {
+              "title": "Installmentspaidannually",
+              "type": "integer",
+              "default": 0
+            },
+            "amount": {
+              "title": "Amount",
+              "type": "integer",
+              "default": 0
+            },
+            "isAdditionalMonthlyPayApplicable": {
+              "title": "Isadditionalmonthlypayapplicable",
+              "type": "boolean",
+              "default": true
+            },
+            "noOfAdditionalMonthlyPayments": {
+              "title": "Noofadditionalmonthlypayments",
+              "type": "integer",
+              "default": 0
+            },
+            "isOvertimeApplicable": {
+              "title": "Isovertimeapplicable",
+              "type": ["null","string"],
+              "default": null
+            },
+            "totalHours": {
+              "title": "Totalhours",
+              "type": "integer",
+              "default": 0
+            },
+            "changeReason": {
+              "title": "Changereason",
+              "type": ["null","string"],
+              "default": null
+            }
+          }
+        }
+      ,
+        "atlasStartDate": {
+          "title": "Atlasstartdate",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "comments": {
+          "title": "Comments",
+          "type": ["null","string"],
+          "default": null
+        },
+        "effectiveStartDate": {
+          "title": "Effectivestartdate",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "effectiveEndDate": {
+          "title": "Effectiveenddate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "payGroup": {
+          "title": "Paygroup",
+          "type": "object",
+          "required": [
+            "payGroupId",
+            "payGroupName",
+            "needsReview"
+          ],
+          "properties": {
+            "payGroupId": {
+              "title": "Paygroupid",
+              "type": "integer",
+              "default": 0
+            },
+            "payGroupName": {
+              "title": "Paygroupname",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "needsReview": {
+              "title": "Needsreview",
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      ,
+        "dataVersionId": {
+          "title": "Dataversionid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "dataVersionIdCD": {
+          "title": "Dataversionidcd",
+          "type": ["null","string"],
+          "default": null
+        },
+        "dataVersionIdOD": {
+          "title": "Dataversionidod",
+          "type": ["null","string"],
+          "default": null
+        },
+        "dataVersionIdCT": {
+          "title": "Dataversionidct",
+          "type": ["null","string"],
+          "default": null
+        },
+        "dataVersionIdET": {
+          "title": "Dataversionidet",
+          "type": ["null","string"],
+          "default": null
+        },
+        "dataVersionIdPGT": {
+          "title": "Dataversionidpgt",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "jobTitle": {
+          "title": "Jobtitle",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "division": {
+          "title": "Division",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "employmentType": {
+          "title": "Employmenttype",
+          "type": ["null","string"],
+          "default": null
+        },
+        "egsStartDate": {
+          "title": "Egsstartdate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "clientId": {
+          "title": "Clientid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "termEndDate": {
+          "title": "Termenddate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "targetStartDate": {
+          "title": "Targetstartdate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "isProbationApplicable": {
+          "title": "Isprobationapplicable",
+          "type": ["null","string"],
+          "default": null
+        },
+        "probationPeriod": {
+          "title": "Probationperiod",
+          "type": "integer",
+          "default": 0
+        },
+        "probationPeriodType": {
+          "title": "Probationperiodtype",
+          "type": ["null","string"],
+          "default": null
+        },
+        "probationEndDate": {
+          "title": "Probationenddate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "jobDescription": {
+          "title": "Jobdescription",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "retirementAge": {
+          "title": "Retirementage",
+          "type": "integer",
+          "default": 0
+        },
+        "jobDescriptionUrl": {
+          "title": "Jobdescriptionurl",
+          "type": ["null","string"],
+          "default": null
+        },
+        "jobDescriptionFileId": {
+          "title": "Jobdescriptionfileid",
+          "type": ["null","string"],
+          "default": null
+        },
+        "jobDescriptionFileName": {
+          "title": "Jobdescriptionfilename",
+          "type": ["null","string"],
+          "default": null
+        },
+        "jobDescriptionFileSize": {
+          "title": "Jobdescriptionfilesize",
+          "type": ["null","string"],
+          "default": null
+        },
+        "isCollectiveAgreementRequired": {
+          "title": "Iscollectiveagreementrequired",
+          "type": ["null","string"],
+          "default": null
+        },
+        "isNonCompeteRequired": {
+          "title": "Isnoncompeterequired",
+          "type": ["null","string"],
+          "default": null
+        },
+        "seniorityDate": {
+          "title": "Senioritydate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "employeeNoticePeriod": {
+          "title": "Employeenoticeperiod",
+          "type": "integer",
+          "default": 0
+        },
+        "employerNoticePeriod": {
+          "title": "Employernoticeperiod",
+          "type": "integer",
+          "default": 0
+        },
+        "employeeNoticePeriodType": {
+          "title": "Employeenoticeperiodtype",
+          "type": ["null","string"],
+          "default": null
+        },
+        "employerNoticePeriodType": {
+          "title": "Employernoticeperiodtype",
+          "type": ["null","string"],
+          "default": null
+        },
+        "workingHrsPerWeek": {
+          "title": "Workinghrsperweek",
+          "type": "integer",
+          "default": 0
+        },
+        "employmentTerm": {
+          "title": "Employmentterm",
+          "type": "integer",
+          "default": 0
+        },
+        "region": {
+          "title": "Region",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "targetDateByClient": {
+          "title": "Targetdatebyclient",
+          "type": "boolean",
+          "default": true
+        },
+        "workSameAsHomeAddress": {
+          "title": "Worksameashomeaddress",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  ,
+    "bankingDetail": {
+      "title": "Bankingdetail",
+      "type": "object",
+      "required": [
+        "currencyCode",
+        "countryCode",
+        "accountHolderDetail",
+        "bankInformation",
+        "bankDetails",
+        "effectiveStartDate",
+        "effectiveEndDate",
+        "updatedAt",
+        "updatedByAtlasId",
+        "comments",
+        "dataVersionId"
+      ],
+      "properties": {
+        "currencyCode": {
+          "title": "Currencycode",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "countryCode": {
+          "title": "Countrycode",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "accountHolderDetail": {
+          "title": "Accountholderdetail",
+          "type": "object",
+          "required": [
+            "firstName",
+            "lastName",
+            "phoneCountryCode",
+            "phoneNo",
+            "isSameAsHomeAddress",
+            "address"
+          ],
+          "properties": {
+            "firstName": {
+              "title": "Firstname",
+              "type": ["null","string"],
+              "default": null
+            },
+            "lastName": {
+              "title": "Lastname",
+              "type": ["null","string"],
+              "default": null
+            },
+            "phoneCountryCode": {
+              "title": "Phonecountrycode",
+              "type": ["null","string"],
+              "default": null
+            },
+            "phoneNo": {
+              "title": "Phoneno",
+              "type": ["null","string"],
+              "default": null
+            },
+            "isSameAsHomeAddress": {
+              "title": "Issameashomeaddress",
+              "type": "boolean",
+              "default": true
+            },
+            "address": {
+              "title": "Address",
+              "type": ["null","string"],
+              "default": null
+            }
+          }
+        }
+      ,
+        "bankInformation": {
+          "title": "Bankinformation",
+          "type": "array",
+          "default": []
+        },
+        "bankDetails": {
+          "title": "Bankdetails",
+          "type": "object",
+          "required": [
+            "country",
+            "currency",
+            "bankName",
+            "swift",
+            "branchName",
+            "nationalClearingCode",
+            "accountNumber",
+            "routingNumber",
+            "iban",
+            "benefeciaryName",
+            "benefeciaryAddress",
+            "remittance"
+          ],
+          "properties": {
+            "country": {
+              "title": "Country",
+              "type": ["null","string"],
+              "default": null
+            },
+            "currency": {
+              "title": "Currency",
+              "type": ["null","string"],
+              "default": null
+            },
+            "bankName": {
+              "title": "Bankname",
+              "type": ["null","string"],
+              "default": null
+            },
+            "swift": {
+              "title": "Swift",
+              "type": ["null","string"],
+              "default": null
+            },
+            "branchName": {
+              "title": "Branchname",
+              "type": ["null","string"],
+              "default": null
+            },
+            "nationalClearingCode": {
+              "title": "Nationalclearingcode",
+              "type": ["null","string"],
+              "default": null
+            },
+            "accountNumber": {
+              "title": "Accountnumber",
+              "type": ["null","string"],
+              "default": null
+            },
+            "routingNumber": {
+              "title": "Routingnumber",
+              "type": ["null","string"],
+              "default": null
+            },
+            "iban": {
+              "title": "Iban",
+              "type": ["null","string"],
+              "default": null
+            },
+            "benefeciaryName": {
+              "title": "Benefeciaryname",
+              "type": ["null","string"],
+              "default": null
+            },
+            "benefeciaryAddress": {
+              "title": "Benefeciaryaddress",
+              "type": ["null","string"],
+              "default": null
+            },
+            "remittance": {
+              "title": "Remittance",
+              "type": ["null","string"],
+              "default": null
+            }
+          }
+        }
+      ,
+        "effectiveStartDate": {
+          "title": "Effectivestartdate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "effectiveEndDate": {
+          "title": "Effectiveenddate",
+          "type": ["null","string"],
+          "default": null
+        },
+        "updatedAt": {
+          "title": "Updatedat",
+          "type": ["null","string"],
+          "default": null
+        },
+        "updatedByAtlasId": {
+          "title": "Updatedbyatlasid",
+          "type": ["null","string"],
+          "default": null
+        },
+        "comments": {
+          "title": "Comments",
+          "type": ["null","string"],
+          "default": null
+        },
+        "dataVersionId": {
+          "title": "Dataversionid",
+          "type": ["null","string"],
+          "default": null
+        }
+      }
+    }
+  ,
+    "documentDetails": {
+      "title": "Documentdetails",
+      "type": "null",
+      "default": null
+    },
+    "employmentStatus": {
+      "title": "Employmentstatus",
+      "type": "integer",
+      "default": 0
+    },
+    "compensation": {
+      "title": "Compensation",
+      "type": ["null","object"],
+      "default": null
+    },
+    "documents": {
+      "title": "Documents",
+      "type": "null",
+      "default": null
+    },
+    "isPasswordSet": {
+      "title": "Ispasswordset",
+      "type": "boolean",
+      "default": true
+    },
+    "canEmployeeDelete": {
+      "title": "Canemployeedelete",
+      "type": "boolean",
+      "default": true
+    },
+    "timeOffPolicies": {
+      "title": "Timeoffpolicies",
+      "type": "array",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "policyId",
+          "policyName",
+          "policyAssignmentDate",
+          "isCustomEffectiveDate",
+          "customEffectiveDate"
+        ],
+        "properties": {
+          "policyId": {
+            "title": "Policyid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "policyName": {
+            "title": "Policyname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "policyAssignmentDate": {
+            "title": "Policyassignmentdate",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "isCustomEffectiveDate": {
+            "title": "Iscustomeffectivedate",
+            "type": "boolean",
+            "default": true
+          },
+          "customEffectiveDate": {
+            "title": "Customeffectivedate",
+            "type": ["null","string","boolean"],
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    },
+    "updatedPolicyDate": {
+      "title": "Updatedpolicydate",
+      "type": ["null","string"],
+      "default": null
+    },
+    "lastLogin": {
+      "title": "Lastlogin",
+      "type": ["null","string"],
+      "default": null
+    }
+  }
+}

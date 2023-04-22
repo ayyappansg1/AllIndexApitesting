@@ -1,0 +1,133 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "totalCount",
+    "plans"
+  ],
+  "properties": {
+    "totalCount": {
+      "title": "Totalcount",
+      "type": "integer"
+    },
+    "plans": {
+      "title": "Plans",
+      "type": "array",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "planTypeId",
+          "name",
+          "startDate",
+          "endDate",
+          "rate",
+          "providerUrl",
+          "isDraft",
+          "planStatus",
+          "id"
+        ],
+        "properties": {
+          "planTypeId": {
+
+            "title": "Plantypeid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "startDate": {
+            "title": "Startdate",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "endDate": {
+            "title": "Enddate",
+            "type": ["string","null"],
+            "default": null
+          },
+          "rate": {
+            "title": "Rate",
+            "type": "integer",
+            "default": 0
+          },
+          "providerUrl": {
+            "title": "Providerurl",
+            "type": ["string","null"],
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "internalComments": {
+            "title": "Internalcomments",
+            "type": ["string","null"],
+            "default": ""
+          },
+          "customerComments": {
+            "title": "Customercomments",
+            "type": ["string","null"],
+            "default": ""
+          },
+          "employeeComments": {
+            "title": "Employeecomments",
+            "type": ["string","null"],
+            "default": ""
+          },
+          "isDuplicatedFromId": {
+            "title": "Isduplicatedfromid",
+            "type": ["string","null"],
+            "default": null
+          },
+          "isDraft": {
+            "title": "Isdraft",
+            "type": "boolean",
+            "default": true
+          },
+          "planStatus": {
+            "title": "Planstatus",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "createdBy": {
+            "title": "Createdby",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "createdDate": {
+            "title": "Createddate",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "modifiedBy": {
+            "title": "Modifiedby",
+            "type": ["string","null"],
+            "default": null
+          },
+          "modifiedDate": {
+            "title": "Modifieddate",
+            "type": ["string","null"],
+            "default": null
+          },
+          "id": {
+            "title": "Id",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

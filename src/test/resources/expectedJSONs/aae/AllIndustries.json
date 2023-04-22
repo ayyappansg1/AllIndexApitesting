@@ -1,0 +1,99 @@
+{
+  "responseCode": 200,
+  "message": null,
+  "errors": null,
+  "data": [
+    {
+      "id": 1,
+      "industryName": "Finance"
+    },
+    {
+      "id": 2,
+      "industryName": "Technology Services"
+    },
+    {
+      "id": 3,
+      "industryName": "Healthcare"
+    },
+    {
+      "id": 4,
+      "industryName": "Education"
+    },
+    {
+      "id": 5,
+      "industryName": "Hospitality"
+    },
+    {
+      "id": 6,
+      "industryName": "Tourism"
+    },
+    {
+      "id": 7,
+      "industryName": "HR and Staffing"
+    },
+    {
+      "id": 8,
+      "industryName": "Biochemical"
+    },
+    {
+      "id": 9,
+      "industryName": "Business Intelligence"
+    },
+    {
+      "id": 10,
+      "industryName": "Construction"
+    },
+    {
+      "id": 11,
+      "industryName": "Enterprise Resource Planning"
+    },
+    {
+      "id": 12,
+      "industryName": "Financial Services"
+    },
+    {
+      "id": 13,
+      "industryName": "Government Services"
+    },
+    {
+      "id": 14,
+      "industryName": "HR and Staffing"
+    },
+    {
+      "id": 15,
+      "industryName": "Life Sciences"
+    },
+    {
+      "id": 16,
+      "industryName": "Management Consulting"
+    },
+    {
+      "id": 17,
+      "industryName": "Mergers and Acquisitions"
+    },
+    {
+      "id": 18,
+      "industryName": "Mining"
+    },
+    {
+      "id": 19,
+      "industryName": "Nonprofit"
+    },
+    {
+      "id": 20,
+      "industryName": "Oil, Gas and Energy"
+    },
+    {
+      "id": 21,
+      "industryName": "Software"
+    },
+    {
+      "id": 22,
+      "industryName": "Technology and Telecoms"
+    },
+    {
+      "id": 23,
+      "industryName": "Venture Capital or Private Equity"
+    }
+  ]
+}

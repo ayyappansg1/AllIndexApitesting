@@ -1,0 +1,433 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "id",
+        "policyName",
+        "timeoffTypeId",
+        "countryId",
+        "country",
+        "clientName",
+        "policyTypeName",
+        "effectiveStartDate",
+        "effectiveEndDate",
+        "statusId",
+        "status",
+        "createdAt",
+        "customerIds",
+        "addTimeOffPolicyPlanModel",
+        "policyHolidayMappingDtos",
+        "accrualPreferenceModel",
+        "timeOfPolicyAssociated"
+      ],
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "policyName": {
+          "title": "Policyname",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "timeoffTypeId": {
+          "title": "Timeofftypeid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "countryId": {
+          "title": "Countryid",
+          "type": "null",
+          "default": null
+        },
+        "country": {
+          "title": "Country",
+          "type": "null",
+          "default": null
+        },
+        "clientName": {
+          "title": "Clientname",
+          "type": "null",
+          "default": null
+        },
+        "policyTypeName": {
+          "title": "Policytypename",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "effectiveStartDate": {
+          "title": "Effectivestartdate",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "effectiveEndDate": {
+          "title": "Effectiveenddate",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "statusId": {
+          "title": "Statusid",
+          "type": "integer",
+          "default": 0
+        },
+        "status": {
+          "title": "Status",
+          "type": "null",
+          "default": null
+        },
+        "createdAt": {
+          "title": "Createdat",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "customerIds": {
+          "title": "Customerids",
+          "type": "array",
+          "default": [],
+          "items":{
+            "title": "Items",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          }
+        },
+        "addTimeOffPolicyPlanModel": {
+          "title": "Addtimeoffpolicyplanmodel",
+          "type": "array",
+          "default": [],
+          "items":{
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "id",
+              "policyId",
+              "accrualStartsType",
+              "accrualEnds",
+              "amountBasedOn",
+              "carryoverSelectedAt",
+              "isPaidTimeOff",
+              "isCalendarDayCounting",
+              "isActive",
+              "isDeleted",
+              "createdAt",
+              "amount",
+              "maxAmount",
+              "carryoverMax",
+              "isCarryoverResetNeeded",
+              "carryoverExpiryDateMonth",
+              "carryoverExpiryDateDay",
+              "accrualEndsSelectedAt",
+              "accrualFrequency",
+              "frequency1",
+              "frequency2",
+              "createdBy",
+              "updatedAt",
+              "updatedBy",
+              "planName",
+              "type",
+              "accrualStarts",
+              "timeOffType",
+              "levelOrder"
+            ],
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "policyId": {
+                "title": "Policyid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "accrualStartsType": {
+                "title": "Accrualstartstype",
+                "type": "integer",
+                "default": 0
+              },
+              "accrualEnds": {
+                "title": "Accrualends",
+                "type": "integer",
+                "default": 0
+              },
+              "amountBasedOn": {
+                "title": "Amountbasedon",
+                "type": "integer",
+                "default": 0
+              },
+              "carryoverSelectedAt": {
+                "title": "Carryoverselectedat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "isPaidTimeOff": {
+                "title": "Ispaidtimeoff",
+                "type": "boolean",
+                "default": true
+              },
+              "isCalendarDayCounting": {
+                "title": "Iscalendardaycounting",
+                "type": "boolean",
+                "default": true
+              },
+              "isActive": {
+                "title": "Isactive",
+                "type": "boolean",
+                "default": true
+              },
+              "isDeleted": {
+                "title": "Isdeleted",
+                "type": "boolean",
+                "default": true
+              },
+              "createdAt": {
+                "title": "Createdat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "amount": {
+                "title": "Amount",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "maxAmount": {
+                "title": "Maxamount",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "carryoverMax": {
+                "title": "Carryovermax",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "isCarryoverResetNeeded": {
+                "title": "Iscarryoverresetneeded",
+                "type": "boolean",
+                "default": true
+              },
+              "carryoverExpiryDateMonth": {
+                "title": "Carryoverexpirydatemonth",
+                "type": "null",
+                "default": null
+              },
+              "carryoverExpiryDateDay": {
+                "title": "Carryoverexpirydateday",
+                "type": "null",
+                "default": null
+              },
+              "accrualEndsSelectedAt": {
+                "title": "Accrualendsselectedat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "accrualFrequency": {
+                "title": "Accrualfrequency",
+                "type": "integer",
+                "default": 0
+              },
+              "frequency1": {
+                "title": "Frequency1",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "frequency2": {
+                "title": "Frequency2",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "createdBy": {
+                "title": "Createdby",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedAt": {
+                "title": "Updatedat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedBy": {
+                "title": "Updatedby",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "planName": {
+                "title": "Planname",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "type": {
+                "title": "Type",
+                "type": "null",
+                "default": null
+              },
+              "accrualStarts": {
+                "title": "Accrualstarts",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "timeOffType": {
+                "title": "Timeofftype",
+                "type": "null",
+                "default": null
+              },
+              "levelOrder": {
+                "title": "Levelorder",
+                "type": "integer",
+                "default": 0
+              }
+            }
+          }
+
+        },
+        "policyHolidayMappingDtos": {
+          "title": "Policyholidaymappingdtos",
+          "type": "null",
+          "default": null
+        },
+        "accrualPreferenceModel": {
+          "title": "Accrualpreferencemodel",
+          "type": "object",
+          "required": [
+            "id",
+            "policyId",
+            "firstAccrual",
+            "accrualOccurrence",
+            "carryoverDateValue",
+            "carryOverDateReset"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "policyId": {
+              "title": "Policyid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "firstAccrual": {
+              "title": "Firstaccrual",
+              "type": "integer",
+              "default": 0
+            },
+            "accrualOccurrence": {
+              "title": "Accrualoccurrence",
+              "type": "integer",
+              "default": 0
+            },
+            "carryoverDateValue": {
+              "title": "Carryoverdatevalue",
+              "type": "integer",
+              "default": 0
+            },
+            "carryOverDateReset": {
+              "title": "Carryoverdatereset",
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      ,
+        "timeOfPolicyAssociated": {
+          "title": "Timeofpolicyassociated",
+          "type": "object",
+          "required": [
+            "policyId",
+            "customers"
+          ],
+          "properties": {
+            "policyId": {
+              "title": "Policyid",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "customers": {
+              "title": "Customers",
+              "type": "array",
+              "default": [],
+              "items":{
+                "title": "Items",
+                "type": "object",
+                "required": [
+                  "customerId",
+                  "isAssociated"
+                ],
+                "properties": {
+                  "customerId": {
+                    "title": "Customerid",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "isAssociated": {
+                    "title": "Isassociated",
+                    "type": "boolean",
+                    "default": true
+                  }
+                }
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}

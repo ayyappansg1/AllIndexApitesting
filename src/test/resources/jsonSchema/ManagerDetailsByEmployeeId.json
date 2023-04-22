@@ -1,0 +1,57 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "employeeId",
+    "fullName",
+    "email",
+    "title",
+    "atlasId",
+    "managerRole",
+    "clientId"
+  ],
+  "properties": {
+    "employeeId": {
+      "title": "Employeeid",
+      "type": ["string","null"],
+      "default": null
+    },
+    "fullName": {
+      "title": "Fullname",
+      "type": ["string","null"],
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "email": {
+      "title": "Email",
+      "type": ["string","null"],
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "title": {
+      "title": "Title",
+      "type": ["string","null"],
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "atlasId": {
+      "title": "Atlasid",
+      "type": ["string","null"],
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "managerRole": {
+      "title": "Managerrole",
+      "type": ["string","null"],
+      "default": null
+    },
+    "clientId": {
+      "title": "Clientid",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    }
+  }
+}

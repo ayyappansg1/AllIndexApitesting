@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "queryId": {
+            "title": "Queryid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "noteForInternalView": {
+            "title": "Noteforinternalview",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "isActive": {
+            "title": "Isactive",
+            "type": "boolean",
+            "default": true
+          },
+          "isDeleted": {
+            "title": "Isdeleted",
+            "type": "boolean",
+            "default": true
+          },
+          "createdAt": {
+            "title": "Createdat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "updatedAt": {
+            "title": "Updatedat",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "createdBy": {
+            "title": "Createdby",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "updatedBy": {
+            "title": "Updatedby",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "updatedByUserName": {
+            "title": "Updatedbyusername",
+            "type": ["string","null"],
+            "default": null
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "employeePayItemsForClient"
+  ],
+  "properties": {
+    "employeePayItemsForClient": {
+      "title": "Employeepayitemsforclient",
+      "type": "array",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "payItems",
+          "employeeId",
+          "egsStartDate",
+          "termEndDate",
+          "employmentStatus",
+          "countryName"
+        ],
+        "properties": {
+          "payItems": {
+            "title": "Payitems",
+            "type": "array",
+            "default": [],
+            "items":{
+              "title": "Items",
+              "type": "object",
+              "required": [
+                "changes",
+                "amount",
+                "currency",
+                "effectiveDate",
+                "endDate",
+                "type",
+                "comment",
+                "scopes",
+                "createDate",
+                "action"
+              ],
+              "properties": {
+                "changes": {
+                  "title": "Changes",
+                  "type": ["string","null"],
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "amount": {
+                  "title": "Amount",
+                  "type": "number",
+                  "default": 0
+                },
+                "currency": {
+                  "title": "Currency",
+                  "type": ["string","null"],
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "effectiveDate": {
+                  "title": "Effectivedate",
+                  "type": ["string","null"],
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "endDate": {
+                  "title": "Enddate",
+                  "type": ["string","null"],
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "type": {
+                  "title": "Type",
+                  "type": "string",
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "comment": {
+                  "title": "Comment",
+                  "type": ["string","null"],
+                  "default": null
+                },
+                "scopes": {
+                  "title": "Scopes",
+                  "type": "string",
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "createDate": {
+                  "title": "Createdate",
+                  "type": ["string","null"],
+                  "default": "",
+                  "pattern": "^.*$"
+                },
+                "action": {
+                  "title": "Action",
+                  "type": ["string","null"],
+                  "default": null
+                }
+              }
+            }
+
+          },
+          "employeeId": {
+            "title": "Employeeid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "egsStartDate": {
+            "title": "Egsstartdate",
+            "type": ["string","null"],
+            "default": null
+          },
+          "termEndDate": {
+            "title": "Termenddate",
+            "type": ["string","null"],
+            "default": null
+          },
+          "employmentStatus": {
+            "title": "Employmentstatus",
+            "type": ["string","null"],
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "countryName": {
+            "title": "Countryname",
+            "type": ["string","null"],
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

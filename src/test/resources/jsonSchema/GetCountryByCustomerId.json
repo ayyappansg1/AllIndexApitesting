@@ -1,0 +1,43 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1679388243.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "code",
+      "currencyId"
+    ],
+    "properties": {
+      "id": {
+        "title": "Id",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "code": {
+        "title": "Code",
+        "type": ["null","string"],
+        "default": null
+      },
+      "currencyId": {
+        "title": "Currencyid",
+        "type": "integer",
+        "default": 0
+      }
+    }
+  }
+
+}

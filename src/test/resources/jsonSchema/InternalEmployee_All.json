@@ -1,0 +1,129 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "page",
+    "pageSize",
+    "totalCount",
+    "employees"
+  ],
+  "properties": {
+    "page": {
+      "title": "Page",
+      "type": "integer",
+      "default": 0
+    },
+    "pageSize": {
+      "title": "PageSize",
+      "type": "integer",
+      "default": 0
+    },
+    "totalCount": {
+      "title": "Totalcount",
+      "type": "integer",
+      "default": 0
+    },
+    "employees": {
+      "title": "Employees",
+      "type": "array",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "employeeID",
+          "atlasID",
+          "firstName",
+          "customerName",
+          "customerID",
+          "lastName",
+          "countryName",
+          "countryCode",
+          "egsStartDate",
+          "createdDate",
+          "employmentStatus",
+          "employeePhotoUrl",
+          "jobTitile"
+        ],
+        "properties": {
+          "employeeID": {
+            "title": "Employeeid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "atlasID": {
+            "title": "Atlasid",
+            "type": ["string","null"],
+            "default": null
+          },
+          "firstName": {
+            "title": "Firstname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "customerName": {
+            "title": "Customername",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "customerID": {
+            "title": "Customerid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "lastName": {
+            "title": "Lastname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "countryName": {
+            "title": "Countryname",
+            "type": ["null","string"],
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "countryCode": {
+            "title": "Countrycode",
+            "type": ["null","string"],
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "egsStartDate": {
+            "title": "Egsstartdate",
+            "type": "null",
+            "default": null
+          },
+          "createdDate": {
+            "title": "CreatedDate",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "employmentStatus": {
+            "title": "EmploymentStatus",
+            "type": "integer",
+            "default": 0
+          },
+          "employeePhotoUrl": {
+            "title": "EmployeePhotoUrl",
+            "type": ["string","null"],
+            "default": null
+          },
+          "jobTitile": {
+            "title": "JobTitle",
+            "type": ["string","null"],
+            "default": null
+          }
+        }
+      }
+
+    }
+  }
+}

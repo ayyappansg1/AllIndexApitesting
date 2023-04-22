@@ -1,0 +1,43 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "region",
+      "statusLabel"
+    ],
+    "properties": {
+      "id": {
+        "title": "Id",
+        "type": "string",
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "name": {
+        "title": "Name",
+        "type": ["null","string"],
+        "default": "",
+        "pattern": "^.*$"
+      },
+      "region": {
+        "$id": "#root/items/region",
+        "title": "Region",
+        "type": "null",
+        "default": null
+      },
+      "statusLabel": {
+        "title": "Statuslabel",
+        "type": "null",
+        "default": null
+      }
+    }
+  }
+
+}

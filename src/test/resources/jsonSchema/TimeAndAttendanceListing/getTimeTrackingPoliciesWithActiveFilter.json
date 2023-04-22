@@ -1,0 +1,1541 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "responseCode": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "errors": {
+      "type": "null"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "policyType": {
+                  "type": "string"
+                },
+                "policyTypeValue": {
+                  "type": "integer"
+                },
+                "policyName": {
+                  "type": "string"
+                },
+                "countryIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "employeeIds": {
+                  "type": "null"
+                },
+                "customerId": {
+                  "type": "null"
+                },
+                "customerIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "customerName": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
+                  "type": "null"
+                },
+                "policyHasNoEffectiveEndDate": {
+                  "type": "boolean"
+                },
+                "timeTrackingFrequency": {
+                  "type": "string"
+                },
+                "timeTrackingFrequencyValue": {
+                  "type": "integer"
+                },
+                "submit": {
+                  "type": "null"
+                },
+                "enableTimeClock": {
+                  "type": "boolean"
+                },
+                "statusId": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "effectiveStartDate": {
+                  "type": "string"
+                },
+                "effectiveEndDate": {
+                  "type": "null"
+                },
+                "countryName": {
+                  "type": "string"
+                },
+                "countryFlag": {
+                  "type": "null"
+                },
+                "countryCode": {
+                  "type": ["null","string"]
+                },
+                "createdAt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "policyType",
+                "policyTypeValue",
+                "policyName",
+                "countryIds",
+                "customerId",
+                "customerName"
+
+              ]
+            }
+          ]
+        },
+        "pageNumber": {
+          "type": "integer"
+        },
+        "pageSize": {
+          "type": "integer"
+        },
+        "totalCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "data",
+        "pageNumber",
+        "pageSize",
+        "totalCount"
+      ]
+    }
+  },
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ]
+}

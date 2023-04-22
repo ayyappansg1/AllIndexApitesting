@@ -1,0 +1,204 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "id",
+          "policyType",
+          "policyTypeValue",
+          "policyName",
+          "countryIds",
+          "employeeIds",
+          "customerId",
+          "customerIds",
+          "customerName",
+          "startDate",
+          "endDate",
+          "policyHasNoEffectiveEndDate",
+          "timeTrackingFrequency",
+          "timeTrackingFrequencyValue",
+          "submit",
+          "enableTimeClock",
+          "statusId",
+          "status",
+          "effectiveStartDate",
+          "effectiveEndDate",
+          "countryName",
+          "createdAt"
+        ],
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "policyType": {
+            "title": "Policytype",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "policyTypeValue": {
+            "title": "Policytypevalue",
+            "type": "integer",
+            "default": 0
+          },
+          "policyName": {
+            "title": "policyName",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "countryIds": {
+            "title": "countryIds",
+            "type": "array",
+            "default": [],
+            "items":{
+              "title": "Items",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          },
+          "employeeIds": {
+            "title": "employeeIds",
+            "type": "null",
+            "default": null
+          },
+          "customerId": {
+            "title": "customerId",
+            "type": "null",
+            "default": null
+          },
+          "customerIds": {
+            "title": "customerIds",
+            "type": "array",
+            "default": [],
+            "items":{
+              "title": "Items",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          },
+          "customerName": {
+            "title": "customerName",
+            "type": ["null","string"],
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "startDate": {
+            "title": "startDate",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "endDate": {
+            "title": "endDate",
+            "type": "null",
+            "default": null
+          },
+          "policyHasNoEffectiveEndDate": {
+            "title": "policyHasNoEffectiveEndDate",
+            "type": "boolean",
+            "default": true
+          },
+          "timeTrackingFrequency": {
+            "title": "timeTrackingFrequency",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "timeTrackingFrequencyValue": {
+            "title": "timeTrackingFrequencyValue",
+            "type": "integer",
+            "default": 0
+          },
+          "submit": {
+            "title": "Submit",
+            "type": ["string","null"],
+            "default": null
+          },
+          "enableTimeClock": {
+            "title": "enableTimeClock",
+            "type": "boolean",
+            "default": true
+          },
+          "statusId": {
+            "title": "statusId",
+            "type": "integer",
+            "default": 0
+          },
+          "status": {
+            "title": "Status",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "effectiveStartDate": {
+            "title": "effectiveStartDate",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "effectiveEndDate": {
+            "title": "effectiveEndDate",
+            "type": ["string","null"],
+            "default": null
+          },
+          "countryName": {
+            "title": "countryName",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "countryFlag": {
+            "title": "countryFlag",
+            "type": ["null","string"],
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "createdAt": {
+            "title": "createdAt",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

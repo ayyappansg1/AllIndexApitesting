@@ -1,0 +1,91 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "id",
+          "currencyId",
+          "location",
+          "name",
+          "officialName",
+          "code",
+          "colorCode"
+        ],
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "currencyId": {
+            "title": "Currencyid",
+            "type": "integer",
+            "default": 0
+          },
+          "location": {
+            "title": "Location",
+            "type": "integer",
+            "default": 0
+          },
+          "name": {
+            "title": "Name",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "officialName": {
+            "title": "Officialname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "code": {
+            "title": "Code",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "colorCode": {
+            "title": "Colorcode",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

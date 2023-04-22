@@ -1,0 +1,72 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "array",
+      "default": [],
+      "items":{
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "userId",
+          "emailId",
+          "userName",
+          "fullName"
+        ],
+        "properties": {
+          "userId": {
+            "title": "Userid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "emailId": {
+            "title": "Emailid",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "userName": {
+            "title": "Username",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          },
+          "fullName": {
+            "title": "Fullname",
+            "type": "string",
+            "default": "",
+            "pattern": "^.*$"
+          }
+        }
+      }
+
+    }
+  }
+}

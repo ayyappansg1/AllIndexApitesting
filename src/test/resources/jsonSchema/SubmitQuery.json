@@ -1,0 +1,332 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "id",
+        "referenceNo",
+        "expertName",
+        "expertContentId",
+        "requestedUserId",
+        "expertUserId",
+        "userAccountId",
+        "userEmailId",
+        "countryId",
+        "country",
+        "industryId",
+        "industry",
+        "hasAgreement",
+        "agreementUploadId",
+        "agreementUploadFileName",
+        "statusId",
+        "areaToClarify",
+        "needKickOffCall",
+        "hasEmployeesInCountry",
+        "isActive",
+        "isDeleted",
+        "createdAt",
+        "updatedAt",
+        "createdBy",
+        "updatedBy"
+      ],
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "referenceNo": {
+          "title": "Referenceno",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "expertName": {
+          "title": "Expertname",
+          "type": "null",
+          "default": null
+        },
+        "expertContentId": {
+          "title": "Expertcontentid",
+          "type": "null",
+          "default": null
+        },
+        "requestedUserId": {
+          "title": "Requesteduserid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "expertUserId": {
+          "title": "Expertuserid",
+          "type": "null",
+          "default": null
+        },
+        "userAccountId": {
+          "title": "Useraccountid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "userEmailId": {
+          "title": "Useremailid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "countryId": {
+          "title": "Countryid",
+          "type": "integer",
+          "default": 0
+        },
+        "country": {
+          "title": "Country",
+          "type": "object",
+          "required": [
+            "id",
+            "country_Name",
+            "country_Code",
+            "order_Id",
+            "region_Id",
+            "is_Deleted",
+            "is_Active",
+            "created_At",
+            "updated_At",
+            "flag_Upload_Id",
+            "header_Image_Id",
+            "isNewlyAdded",
+            "country_Created_At",
+            "country_Updated_At",
+            "videoLink",
+            "isCompanyFavourite",
+            "isUserFavourite"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer",
+              "default": 0
+            },
+            "country_Name": {
+              "title": "Country_name",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "country_Code": {
+              "title": "Country_code",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "order_Id": {
+              "title": "Order_id",
+              "type": "integer",
+              "default": 0
+            },
+            "region_Id": {
+              "title": "Region_id",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "is_Deleted": {
+              "title": "Is_deleted",
+              "type": "boolean",
+              "default": true
+            },
+            "is_Active": {
+              "title": "Is_active",
+              "type": "boolean",
+              "default": true
+            },
+            "created_At": {
+              "title": "Created_at",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "updated_At": {
+              "title": "Updated_at",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "flag_Upload_Id": {
+              "title": "Flag_upload_id",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "header_Image_Id": {
+              "title": "Header_image_id",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "isNewlyAdded": {
+              "title": "Isnewlyadded",
+              "type": "boolean",
+              "default": true
+            },
+            "country_Created_At": {
+              "title": "Country_created_at",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "country_Updated_At": {
+              "title": "Country_updated_at",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            },
+            "videoLink": {
+              "title": "Videolink",
+              "type": "null",
+              "default": null
+            },
+            "isCompanyFavourite": {
+              "title": "Iscompanyfavourite",
+              "type": "boolean",
+              "default": true
+            },
+            "isUserFavourite": {
+              "title": "Isuserfavourite",
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      ,
+        "industryId": {
+          "title": "Industryid",
+          "type": "integer",
+          "default": 0
+        },
+        "industry": {
+          "title": "Industry",
+          "type": "object",
+          "required": [
+            "id",
+            "industryName"
+          ],
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer",
+              "default": 0
+            },
+            "industryName": {
+              "title": "Industryname",
+              "type": "string",
+              "default": "",
+              "pattern": "^.*$"
+            }
+          }
+        }
+      ,
+        "hasAgreement": {
+          "title": "Hasagreement",
+          "type": "boolean",
+          "default": true
+        },
+        "agreementUploadId": {
+          "title": "Agreementuploadid",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "agreementUploadFileName": {
+          "title": "Agreementuploadfilename",
+          "type": "null",
+          "default": null
+        },
+        "statusId": {
+          "title": "Statusid",
+          "type": "integer",
+          "default": 0
+        },
+        "areaToClarify": {
+          "title": "Areatoclarify",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "needKickOffCall": {
+          "title": "Needkickoffcall",
+          "type": "boolean",
+          "default": true
+        },
+        "hasEmployeesInCountry": {
+          "title": "Hasemployeesincountry",
+          "type": "boolean",
+          "default": true
+        },
+        "isActive": {
+          "title": "Isactive",
+          "type": "boolean",
+          "default": true
+        },
+        "isDeleted": {
+          "title": "Isdeleted",
+          "type": "boolean",
+          "default": true
+        },
+        "createdAt": {
+          "title": "Createdat",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "updatedAt": {
+          "title": "Updatedat",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "createdBy": {
+          "title": "Createdby",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "updatedBy": {
+          "title": "Updatedby",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        }
+      }
+    }
+
+  }
+}

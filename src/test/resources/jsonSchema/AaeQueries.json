@@ -1,0 +1,476 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "responseCode",
+    "message",
+    "errors",
+    "data"
+  ],
+  "properties": {
+    "responseCode": {
+      "title": "Responsecode",
+      "type": "integer",
+      "default": 0
+    },
+    "message": {
+      "title": "Message",
+      "type": "null",
+      "default": null
+    },
+    "errors": {
+      "title": "Errors",
+      "type": "null",
+      "default": null
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "data": {
+          "title": "Data",
+          "type": "array",
+          "default": [],
+          "items":{
+            "title": "Items",
+            "type": "object",
+            "required": [
+              "id",
+              "referenceNo",
+              "expertName",
+              "expertContentId",
+              "requestedUserId",
+              "requestedUser",
+              "countryId",
+              "countryName",
+              "timeUsed",
+              "statusId",
+              "status",
+              "statusDisplayOrder",
+              "industryId",
+              "industry",
+              "hasAgreement",
+              "agreementUploadId",
+              "agreementUploadFileName",
+              "areaToClarify",
+              "needKickOffCall",
+              "hasEmployeesInCountry",
+              "companyId",
+              "reqUserCompany",
+              "assignee",
+              "isActive",
+              "isDeleted",
+              "requestDate",
+              "updatedAt",
+              "createdBy",
+              "updatedBy",
+              "assigneeId",
+              "briefsCount"
+            ],
+            "properties": {
+              "id": {
+                "title": "Id",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "referenceNo": {
+                "title": "Referenceno",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "expertName": {
+                "title": "expertName",
+                "type": ["null","string"],
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "expertContentId": {
+                "title": "expertContentId",
+                "type": ["null","string"],
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "requestedUserId": {
+                "title": "Requesteduserid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "requestedUser": {
+                "title": "Requesteduser",
+                "type": ["null","object"],
+                "required": [
+                  "userId",
+                  "firstName",
+                  "lastName",
+                  "isActive",
+                  "fullName",
+                  "emailId",
+                  "companyId",
+                  "documentLocker"
+                ],
+                "properties": {
+                  "userId": {
+                    "title": "Userid",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "firstName": {
+                    "title": "Firstname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "lastName": {
+                    "title": "Lastname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "isActive": {
+                    "title": "Isactive",
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "fullName": {
+                    "title": "Fullname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "emailId": {
+                    "title": "Emailid",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "companyId": {
+                    "title": "Companyid",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "documentLocker": {
+                    "title": "Documentlocker",
+                    "type": ["object","null"],
+                    "default": null
+                  }
+                }
+              }
+            ,
+              "countryId": {
+                "title": "Countryid",
+                "type": "integer",
+                "default": 0
+              },
+              "countryName": {
+                "title": "Countryname",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "timeUsed": {
+                "title": "Timeused",
+                "type": ["null","object"],
+                "required": [
+                  "usedHour",
+                  "usedminutes",
+                  "estimatedHour",
+                  "statusId"
+                ],
+                "properties": {
+                  "usedHour": {
+                    "title": "Usedhour",
+                    "type": "integer",
+                    "default": 0
+                  },
+                  "usedminutes": {
+                    "title": "Usedminutes",
+                    "type": "integer",
+                    "default": 0
+                  },
+                  "estimatedHour": {
+                    "title": "Estimatedhour",
+                    "type": "integer",
+                    "default": 0
+                  },
+                  "statusId": {
+                    "title": "Statusid",
+                    "type": "integer",
+                    "default": 0
+                  }
+                }
+              }
+            ,
+              "statusId": {
+                "title": "Statusid",
+                "type": "integer",
+                "default": 0
+              },
+              "status": {
+                "title": "Status",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "statusDisplayOrder": {
+                "title": "Statusdisplayorder",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "industryId": {
+                "title": "Industryid",
+                "type": "integer",
+                "default": 0
+              },
+              "industry": {
+                "title": "Industry",
+                "type": "object",
+                "required": [
+                  "id",
+                  "industryName"
+                ],
+                "properties": {
+                  "id": {
+                    "title": "Id",
+                    "type": "integer",
+                    "default": 0
+                  },
+                  "industryName": {
+                    "title": "Industryname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  }
+                }
+              }
+            ,
+              "hasAgreement": {
+                "title": "Hasagreement",
+                "type": "boolean",
+                "default": true
+              },
+              "agreementUploadId": {
+                "title": "Agreementuploadid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "agreementUploadFileName": {
+                "title": "Agreementuploadfilename",
+                "type": "null",
+                "default": null
+              },
+              "areaToClarify": {
+                "title": "Areatoclarify",
+                "type": ["null","string"],
+                "default": "",
+                "pattern": "^[A-Za-z0-9\\n -.]*$"
+              },
+              "needKickOffCall": {
+                "title": "Needkickoffcall",
+                "type": "boolean",
+                "default": true
+              },
+              "hasEmployeesInCountry": {
+                "title": "Hasemployeesincountry",
+                "type": "boolean",
+                "default": true
+              },
+              "companyId": {
+                "title": "Companyid",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "reqUserCompany": {
+                "title": "Requsercompany",
+                "type": ["null","object"],
+                "required": [
+                  "id",
+                  "name",
+                  "companyCode"
+                ],
+                "properties": {
+                  "id": {
+                    "title": "Id",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "name": {
+                    "title": "Name",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "companyCode": {
+                    "title": "Companycode",
+                    "type": "null",
+                    "default": null
+                  }
+                }
+              }
+            ,
+              "assignee": {
+                "title": "Assignee",
+                "type": ["object","null"],
+                "required": [
+                  "userId",
+                  "firstName",
+                  "lastName",
+                  "isActive",
+                  "fullName",
+                  "emailId",
+                  "companyId",
+                  "documentLocker"
+                ],
+                "properties": {
+                  "userId": {
+                    "title": "Userid",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "firstName": {
+                    "title": "Firstname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "lastName": {
+                    "title": "Lastname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "isActive": {
+                    "title": "Isactive",
+                    "type": "boolean",
+                    "default": true
+                  },
+                  "fullName": {
+                    "title": "Fullname",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "emailId": {
+                    "title": "Emailid",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "companyId": {
+                    "title": "Companyid",
+                    "type": "string",
+                    "default": "",
+                    "pattern": "^.*$"
+                  },
+                  "documentLocker": {
+                    "title": "Documentlocker",
+                    "type": ["null","object"],
+                    "required": [
+                      "userId",
+                      "lockerId",
+                      "lockerLocation",
+                      "region",
+                      "creationDateTime"
+                    ],
+                    "properties": {
+                      "userId": {
+                        "title": "Userid",
+                        "type": "null",
+                        "default": null
+                      },
+                      "lockerId": {
+                        "title": "Lockerid",
+                        "type": "string",
+                        "default": "",
+                        "pattern": "^.*$"
+                      },
+                      "lockerLocation": {
+                        "title": "Lockerlocation",
+                        "type": "null",
+                        "default": null
+                      },
+                      "region": {
+                        "title": "Region",
+                        "type": "null",
+                        "default": null
+                      },
+                      "creationDateTime": {
+                        "title": "Creationdatetime",
+                        "type": "string",
+                        "default": "",
+                        "pattern": "^.*$"
+                      }
+                    }
+                  }
+
+                }
+              }
+            ,
+              "isActive": {
+                "title": "Isactive",
+                "type": "boolean",
+                "default": true
+              },
+              "isDeleted": {
+                "title": "Isdeleted",
+                "type": "boolean",
+                "default": true
+              },
+              "requestDate": {
+                "title": "Requestdate",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedAt": {
+                "title": "Updatedat",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "createdBy": {
+                "title": "Createdby",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "updatedBy": {
+                "title": "Updatedby",
+                "type": "string",
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "assigneeId": {
+                "title": "Assigneeid",
+                "type": ["null","string"],
+                "default": "",
+                "pattern": "^.*$"
+              },
+              "briefsCount": {
+                "title": "Briefscount",
+                "type": "integer",
+                "default": 0
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}
